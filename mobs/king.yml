@@ -1,0 +1,58 @@
+king:
+  name: "&6&lKing of The Dead&r"
+  type: wither_skeleton
+  health: 800
+  show_name: true
+  entity_attributes:
+    generic_movement_speed: 0.2
+    generic_attack_speed: 0.6
+    generic_attack_damage: 8
+    generic_knockback_resistance: 1
+  item: netherite_sword
+  helmet: kingskull
+  transformable: false
+  default_drops: false
+  interval: 12000
+  protection:
+    fall: 100
+    wither: 100
+    overall: 0.1
+  triggers:
+    damage_75:
+      max_health_percentage: 75
+      min_health_percentage: 50
+      type: damage
+      cast:
+        king_boost: 100
+        king_stun: 60
+        none: 60
+    damage_50:
+      max_health_percentage: 50
+      min_health_percentage: 25
+      type: damage
+      cast:
+        king_boost: 200
+        king_stun: 100
+        king_ring: 100
+    damage_25:
+      max_health_percentage: 25
+      type: damage
+      cast:
+        king_heal: 200
+        king_stun: 200
+        king_ring: 100
+    interval:
+      commands:
+      - mmob spawn skeleton_warrior @x @y @z @world 1
+  drop_xp: 200
+  drops:
+  - kingskull: 10
+    none: 50
+  - sp:300
+
+skeleton_warrior:
+ health: 30
+ name: Skeleton Warrior
+ type: skeleton
+ default_drops: true
+ item: iron_sword

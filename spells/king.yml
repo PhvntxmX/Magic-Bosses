@@ -1,0 +1,185 @@
+king_ring:
+ name: Ring Of Death
+ actions:
+   cast:
+   - class: Delay
+   - class: PotionEffect
+   - class: Ring
+     actions:
+     - class: Asynchronous
+       actions:
+       - class: ArmorStandProjectile
+         target: other
+         range: 16
+         use_block_location: true
+         actions:
+         - class: Damage
+ effects:
+   cast:
+   - sound: entity_lightning_bolt_thunder
+     sound_pitch: 0.7
+     location: origin
+     source_location: body
+     effectlib:
+       class: AnimatedBall
+       y_factor: 1.5
+       x_factor: 0.5
+       z_factor: 0.5
+       particle: redstone
+       color: "000000"
+       duration: 6000
+   tick:
+   - location: target
+     particle: redstone
+     particle_size: 5
+     color: "000000"
+   hit:
+   - location: target
+     sound: entity_wither_break_block
+     sound_pitch: 0.6
+     sound_volume: 0.8
+     particle: redstone
+     particle_count: 10
+     color: "000000"
+     particle_offset_x: 0.5
+     particle_offset_y: 0.5
+     particle_offset_z: 0.5
+ parameters:
+   delay: 2000
+   add_effects:
+     slow: 10
+   duration: 4000
+   target: self
+   cooldown: 15000
+   helmet_item: wither_skeleton_skull
+   radius: 16
+   damage_max_distance: 48
+   damage: 22
+   thickness: 0
+   velocity: 20
+   armor_stand_invisible: true
+
+king_boost:
+  actions:
+    cast:
+      - class: PotionEffect
+  effects:
+    cast:
+      - location: origin
+        source_location: feet
+        effectlib:
+          class: Trace
+          particle: spell
+          particle_count: 1
+          particle_offset_x: 0.6
+          particle_offset_y: 0.6
+          particle_offset_z: 0.6
+          duration: 1000
+  parameters:
+    target: self
+    cooldown: 8000
+    add_effects:
+      speed: 2
+    duration: 6000
+
+king_stun:
+  name: Stunning Skull
+  actions:
+    cast:
+    - class: ArmorStandProjectile
+      helmet_item: wither_skeleton_skull
+      armor_stand_invisible: true
+      orient_head: true
+      actions:
+        - class: Damage
+        - class: PotionEffect
+  effects:
+    tick:
+    - location: target
+      particle: ash
+      particle_count: 10
+      particle_offset_x: 0.2
+      particle_offset_y: 0.2
+      particle_offset_z: 0.2
+    cast:
+    - sound: entity_elder_guardian_curse
+      sound_pitch: 1.6
+      sound_volume: 1.2
+    - sound: entity_wither_hurt
+    hit:
+    - location: target
+      target_location: body
+      sound: entity_ender_dragon_hurt
+      effectlib:
+        class: AnimatedBall
+        particle: block_crack
+        material: netherite_block
+        y_factor: 0.7
+        x_factor: 0.5
+        z_factor: 0.5
+        duration: $duration
+    - location: target
+      sound: item_trident_thunder
+  parameters:
+    track_target: true
+    range: 32
+    target: other
+    cooldown: 5000
+    velocity: 25
+    add_effects:
+      slow: 2
+      blindness: 0
+      confusion: 0
+    duration: 4000
+    damage: 2
+
+king_heal:
+ name: Explosion
+ actions:
+   cast:
+   - class: Repeat
+     actions:
+     - class: Heal
+     - class: Delay
+   - class: AreaOfEffect
+     actions:
+       - class: Damage
+ effects:
+   cast:
+   - sound: block_end_portal_frame_fill
+     sound_pitch: 0.7
+   - sound: block_beacon_activate
+     location: origin
+     source_location: body
+     effectlib:
+       class: AnimatedBall
+       particle: block_crack
+       material: netherite_block
+       y_factor: 1
+       x_factor: 0.6
+       z_factor: 0.6
+       duration: 5000
+   cast_finish:
+   - location: origin
+     sound: entity_wither_spawn
+     sound_pitch: 0.8
+     source_location: body
+     particle: flash
+     effectlib:
+       class: Modified
+       effect:
+         class: Sphere
+         particle: redstone
+         color: "000000"
+       parameters:
+         radius: max(10,t/8)
+ parameters:
+   repeat: 10
+   delay: 500
+   amount: 2
+   target: self
+   radius: 10
+   damage_max_distance: 12
+   damage: 15
+   cooldown: 10000
+   y_radius: 10

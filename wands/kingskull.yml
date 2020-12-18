@@ -1,0 +1,24 @@
+kingskull:
+  effect_particle: ash
+  stack: true
+  effect_particle_offset: 0.1
+  bound: true
+  icon: player_head:http://textures.minecraft.net/texture/68c0165e9b2dbd78dac91277e97d9a02648f3059e126a5941a84d05429ce
+  effect_particle_radius: 0.9
+  protection:
+    poison: 0.3
+    wither: 0.3
+  spell_inventory:
+    kingofdead: 0
+  mode: cast
+  active_spell: kingofdead
+  weakness:
+    fire: 0.1
+  effect_particle_interval: 1000.0
+  effect_bubbles: true
+  effect_color: 0.0
+  effect_particle_count: 20.0
+  keep: true
+  name: '&6King's Skull'
+  spells:
+  - deathcurse

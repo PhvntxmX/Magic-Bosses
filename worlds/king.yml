@@ -1,0 +1,22 @@
+nether:
+  world: world_nether
+  entity_spawn:
+    skeletons:
+      target_type: skeleton
+      class: Replace
+      probability: 0.2
+      replace_type: skeleton_warrior
+    king:
+      target_type: wither_skeleton
+      class: Replace
+      probability: 0.005
+      replace_type: king
+
+overworld:
+  world: world
+  entity_spawn:
+    skeletons:
+      target_type: skeleton
+      class: Replace
+      probability: 0.2
+      replace_type: skeleton_warrior

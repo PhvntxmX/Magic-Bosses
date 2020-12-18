@@ -1,0 +1,65 @@
+deathcurse:
+  name: Death Curse
+  icon: rotten_flesh{CustomModelData:18001}
+  icon_disabled: rotten_flesh{CustomModelData:18002}
+  require_health_percentage: 1
+  actions:
+    cast:
+    - class: ChangeContext
+      target_caster: true
+      actions:
+      - class: Modifier
+    - class: CustomProjectile
+      actions:
+      - class: ChangeContext
+        source_is_target: true
+        actions:
+        - class: AreaOfEffect
+          actions:
+          - class: Aggro
+  effects:
+    cast:
+    - sound: magic.zap
+      sound_pitch: 0.65
+      sound_volume: 0.5
+    - sound: entity_wither_shoot
+      sound_volume: 1.2
+      sound_pitch: 0.8
+    - sound: item_totem_use
+      sound_volume: 1.2
+      sound_pitch: 0.8
+    tick:
+    - location: target
+      particle: redstone
+      particle_size: 5
+      color: "000000"
+    hit:
+    - location: target
+      effectlib:
+        class: Sphere
+        particle: redstone
+        color: "000000"
+        radius: $radius
+        duration: $duration
+        update_locations: false
+        update_directions: false
+    - location: target
+      sound: entity_elder_guardian_curse
+      sound_pitch: 0.7
+    - location: target
+      sound: item_trident_thunder
+      sound_pitch: 0.7
+  parameters:
+    duration: 10000
+    cooldown: 45000
+    add_modifiers:
+      - hidden
+    range: 16
+    target: other_entity
+    track_target: true
+    track_range: 100
+    velocity: 20
+    radius: 32
+    y_radius: 20
+  costs:
+    health: 10

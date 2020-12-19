@@ -9,9 +9,9 @@ kingskull:
     poison: 0.3
     wither: 0.3
   spell_inventory:
-    kingofdead: 0
+    deathcurse: 0
   mode: cast
-  active_spell: kingofdead
+  active_spell: deathcurse
   weakness:
     fire: 0.1
   effect_particle_interval: 1000.0

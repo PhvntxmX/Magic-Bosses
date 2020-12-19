@@ -19,6 +19,6 @@ kingskull:
   effect_color: 0.0
   effect_particle_count: 20.0
   keep: true
-  name: '&6King's Skull'
+  name: "&6King's Skull"
   spells:
   - deathcurse

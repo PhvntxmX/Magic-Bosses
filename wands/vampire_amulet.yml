@@ -1,0 +1,14 @@
+vampire_amulet:
+  name: "&cVampire's Amulet"
+  description: Heals the owner, when he deals magic damage
+  inherit: base_wand
+  icon: diamond{CustomModelData:18003}
+  stack: true
+  keep: true
+  bound: true
+  effect_bubbles: true
+  effect_color: "08a0303"
+  mana_regeneration_boost: 0.1
+  mana_max_boost: 0.1
+  spells:
+  - vampire_magic

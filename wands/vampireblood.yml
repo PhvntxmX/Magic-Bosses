@@ -1,0 +1,7 @@
+vampireblood:
+  icon: potion:8a0303
+  description: |-
+    Who knows, what's gonna happen?..
+    &lCan be used in crafting
+  name: "&cVampire's Blood"
+  consume_spell: vampireblood

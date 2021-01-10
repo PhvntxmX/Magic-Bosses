@@ -1,0 +1,11 @@
+vampire_amulet:
+  locked: true
+  output: vampire_amulet
+  output_type: wand
+
+  materials:
+    o: magicheart
+    i: vampireblood
+
+  row_1: o
+  row_2: i

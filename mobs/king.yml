@@ -1,5 +1,7 @@
 king:
-  name: "&6&lKing of The Dead&r"
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  name: '&6&lKing of The Dead&r'
   type: wither_skeleton
   health: 800
   show_name: true
@@ -12,7 +14,7 @@ king:
   helmet: kingskull
   transformable: false
   default_drops: false
-  interval: 12000
+  interval: 16000
   protection:
     fall: 100
     wither: 100
@@ -42,17 +44,9 @@ king:
         king_stun: 200
         king_ring: 100
     interval:
-      commands:
-      - mmob spawn skeleton_warrior @x @y @z @world 1
+      cast: "summon type skeleton_warrior repeat 2 delay 2000"
   drop_xp: 200
   drops:
   - kingskull: 10
     none: 50
   - sp:300
-
-skeleton_warrior:
- health: 30
- name: Skeleton Warrior
- type: skeleton
- default_drops: true
- item: iron_sword

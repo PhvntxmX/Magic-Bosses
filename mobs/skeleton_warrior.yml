@@ -1,0 +1,8 @@
+skeleton_warrior:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  health: 20
+  name: Skeleton Warrior
+  type: skeleton
+  default_drops: true
+  item: iron_sword

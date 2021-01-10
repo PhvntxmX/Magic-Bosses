@@ -1,0 +1,42 @@
+vampire:
+  name: "&4Vampire"
+  type: vindicator
+  health: 100
+  disguise:
+    type: player
+    skin: Palutena
+  entity_attributes:
+    generic_attack_damage: 3
+    generic_attack_speed: 3
+    generic_armor: 8
+    generic_movement_speed: 0.3
+  transformable: false
+  default_drops: false
+  drop_xp: 100
+  interval: 7500
+  drops:
+    - vampireblood: 10
+    - none: 90
+  weakness:
+    fire: 0.2
+  protection:
+    magic: 0.2
+  triggers:
+    damage_dealt:
+      cast: vampire_mob
+    interval:
+      cast:
+        batswarm: 40
+        none: 10
+    damage_50:
+      max_health_percentage: 50
+      type: damage
+      cast:
+        batform: 25
+        none: 100
+    damage_25:
+      max_health_percentage: 25
+      type: damage
+      cast:
+        batform: 50
+        none: 30

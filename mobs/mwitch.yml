@@ -1,0 +1,10 @@
+mwitch:
+  type: witch
+  name: "&dWitch"
+  default_drops: true
+  interval: 12000
+  protection:
+    magic: 0.4
+  triggers:
+    interval:
+      cast: witch

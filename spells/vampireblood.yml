@@ -1,0 +1,23 @@
+vampireblood:
+  name: Drink
+  discover_recipes:
+    - vampire_amulet
+  icon: "potion:8a0303"
+  actions:
+    cast:
+    - class: Random
+      actions:
+      - class: Serial
+        weight: 30
+        actions:
+        - class: AddSpell
+        - class: Message
+          message: "&fYou became a vampire!"
+      - class: Message
+        message: "&fNothing happened.."
+        weight: 60
+  parameters:
+    spell: vampire
+    add_to: mage
+    target: self
+    message_type: action_bar

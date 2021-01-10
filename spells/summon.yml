@@ -1,0 +1,66 @@
+summon:
+  actions:
+    cast:
+      - class: ChangeContext
+        target_caster: true
+        actions:
+        - class: PotionEffect
+      - class: Delay
+      - class: ChangeContext
+        source_is_target: true
+        actions:
+        - class: Repeat
+          actions:
+            - class: Spread
+              actions:
+                - class: SpawnEntity
+                  set_target: true
+                - class: Aggro
+                - class: Delay
+                  delay: 50
+                - class: PlayEffects
+                  effects: spawn
+            - class: Delay
+              delay: 100
+  effects:
+    cast:
+    - location: origin
+      source_location: body
+      sound: block_beacon_power_select
+      effectlib:
+        class: Sphere
+        radius: 0.8
+        particle: enchantment_table
+        duration: 100
+        iterations: 1
+        particle_offset_x: 0.2
+        particle_offset_y: 0.2
+        particle_offset_z: 0.2
+    - location: origin
+      source_location: head
+      sound: block_enchantment_table_use
+      sound_pitch: 0.8
+      effectlib:
+        class: Smoke
+        particle: spell
+        particle_offset_x: 0.1
+        particle_offset_y: 0.1
+        particle_offset_z: 0.1
+        duration: $delay
+    spawn:
+    - location: target
+      sound: entity_skeleton_hurt
+      particle: explosion_normal
+      particle_count: 15
+      particle_offset_x: 0.5
+      particle_offset_y: 0.5
+      particle_offset_z: 0.5
+  parameters:
+    add_effects:
+      slow: 10
+    duration: 1000
+    target: other
+    delay: 1000
+    cancel_on_damage: 10
+    repeat: 1
+    radius: 8

@@ -1,0 +1,54 @@
+batform:
+  name: Bat Form
+  icon: salmon_bucket{CustomModelData:18001}
+  icon_disabled: salmon_bucket{CustomModelData:18002}
+  actions:
+    cast:
+      - class: ChangeContext
+        actions:
+        - class: PotionEffect
+      - class: Multiply
+        actions:
+          - class: EntityProjectile
+            actions:
+              - class: Damage
+  effects:
+    cast:
+      - location: origin
+        sound: magic.vanish
+        sound_volume: 0.3
+      - location: origin
+        sound: entity_bat_takeoff
+        particle: spell_mob
+        particle_count: 15
+        particle_offset_x: 0.5
+        particle_offset_y: 0.5
+        particle_offset_z: 0.5
+        color: "4b0082"
+    tick:
+      - location: target
+        particle: redstone
+        color: "4b0082"
+    hit:
+      - location: target
+        particle: fireworks_spark
+        particle_count: 7
+        particle_data: 0.2
+        particle_offset_x: 0.1
+        particle_offset_y: 0.1
+        particle_offset_z: 0.1
+  parameters:
+    target: other
+    target_self: false
+    target_caster: true
+    multiply: rand(20,50)
+    type: bat
+    effects_particles: false
+    duration: 5000
+    add_effects:
+      speed: 2
+      invisibility: 0
+    range: 32
+    spread: 5
+    velocity: 30
+    damage: 6

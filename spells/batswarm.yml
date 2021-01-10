@@ -1,0 +1,48 @@
+batswarm:
+  name: Bat Swarm
+  description: Damage Your Target
+  icon: rabbit_hide{CustomModelData:18001}
+  icon_disabled: rabbit_hide{CustomModelData:18002}
+  actions:
+    cast:
+    - class: Multiply
+      actions:
+        - class: EntityProjectile
+          actions:
+            - class: PotionEffect
+            - class: Damage
+  effects:
+    cast:
+    - location: origin
+      sound: entity_bat_takeoff
+      effectlib:
+        class: Cone
+        particle: redstone
+        duration: 750
+        iterations: 1
+        randomize: true
+        color: "4b0082"
+    hit:
+    - location: target
+      particle: fireworks_spark
+      particle_count: 7
+      particle_data: 0.2
+      particle_offset_x: 0.1
+      particle_offset_y: 0.1
+      particle_offset_z: 0.1
+    tick:
+    - location: target
+      particle: redstone
+      color: "4b0082"
+  parameters:
+    range: 32
+    spread: 0.4
+    multiply: rand(5,15)
+    duration: 2000
+    add_effects:
+      slow: 1
+      blindness: 1
+    target: other
+    type: bat
+    velocity: 30
+    damage: 6

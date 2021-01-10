@@ -1,0 +1,91 @@
+witch:
+  icon: rotten_flesh{CustomModelData:18001}
+  icon_disabled: rotten_flesh{CustomModelData:18002}
+  name: "Witch's Curse"
+  actions:
+    cast:
+    - class: Delay
+    - class: Random
+      actions:
+      - class: CustomProjectile
+        weight: 2
+        actions:
+          - class: Random
+            actions:
+              - class: PotionEffect
+                weight: 5
+                add_effects:
+                  blindness: 1
+                  confusion: 1
+              - class: PotionEffect
+                weight: 3
+                add_effects:
+                  poison: 1
+                  hunger: 1
+              - class: PotionEffect
+                weight: 4
+                add_effects:
+                  slow: 1
+                  slow_digging: 1
+              - class: Damage
+      - class: ChangeContext
+        target_caster: true
+        weight: 1
+        actions:
+        - class: Random
+          actions:
+          - class: PotionEffect
+            weight: 5
+            add_effects:
+              damage_resistance: 1
+          - class: PotionEffect
+            weight: 3
+            add_effects:
+              regeneration: 1
+              absorption: 2
+          - class: PotionEffect
+            weight: 3
+            add_effects:
+              invisibility: 0
+              speed: 1
+  effects:
+    hit:
+      - location: target
+        particle: fireworks_spark
+        particle_count: 3
+        particle_offset_x: 0.1
+        particle_offset_y: 0.1
+        particle_offset_z: 0.1
+        particle_data: 0.1
+    cast:
+      - location: origin
+        source_location: eyes
+        sound: block_beacon_power_select
+        sound_pitch: 0.9
+        sound_volume: 1.2
+        effectlib:
+          class: AnimatedBall
+          particle: spell_witch
+          duration: $delay
+          x_factor: 0.25
+          y_factor: 0.5
+          z_factor: 0.25
+    tick:
+      - location: target
+        particle: spell_witch
+    projectile:
+      - location: origin
+        sound: magic.zap
+        sound_pitch: 1.2
+        particle: spell_witch
+        particle_count: 5
+        particle_offset_x: 0.5
+        particle_offset_y: 0.5
+        particle_offset_z: 0.5
+  parameters:
+    target: other
+    range: 16
+    velocity: 50
+    duration: rand(5,10)*1000
+    damage: 5
+    delay: 1500

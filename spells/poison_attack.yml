@@ -1,0 +1,13 @@
+poison_attack:
+  name: Poisonous Attack
+  actions:
+    cast:
+    - class: Probability
+      actions:
+      - class: PotionEffect
+  parameters:
+    target: damage_target
+    add_effects:
+      poison: 0
+    duration: 5000
+    probability: 0.3

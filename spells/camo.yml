@@ -1,0 +1,25 @@
+camo_off:
+  actions:
+    cast:
+      - class: PotionEffect
+  parameters:
+    target: self
+    remove_effects:
+      - invisibility
+
+camo:
+  actions:
+    cast:
+      - class: Sphere
+        actions:
+        - class: CheckBlock
+          actions:
+          - class: PotionEffect
+  parameters:
+    target: self
+    radius: 1.5
+    effects_particles: true
+    add_effects:
+      invisibility: 0
+    duration: 2000
+    allowed: grass,tall_grass

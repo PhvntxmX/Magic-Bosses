@@ -1,8 +1,0 @@
-witch:
-  world: world
-  entity_spawn:
-    witch:
-      target_type: witch
-      class: Replace
-      probability: 1.0
-      replace_type: mwitch

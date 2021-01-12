@@ -1,9 +1,0 @@
-vampire:
-  inherit: false
-  world: world
-  entity_spawn:
-    vampire:
-      target_type: villager
-      class: Replace
-      probability: 0.1
-      replace_type: vampire

@@ -1,0 +1,54 @@
+nether:
+  world: world_nether
+  entity_spawn:
+    necromancer:
+      target_type: skeleton
+      class: Replace
+      probability: 0.1
+      replace_type: necromancer
+    skeletons:
+      target_type: skeleton
+      class: Replace
+      probability: 0.2
+      replace_type: skeleton_warrior
+    king:
+      target_type: wither_skeleton
+      class: Replace
+      probability: 0.005
+      replace_type: king
+
+overworld:
+  world: world
+  entity_spawn:
+    zombies:
+      target_type: zombie
+      class: Replace
+      probability: 0.5
+      replace_type:
+        fast_zombie: 30
+        rotten_zombie: 10
+    creeper:
+      target_type: creeper
+      class: Replace
+      probability: 0.2
+      replace_type: mcreeper
+    vampire:
+      target_type: villager
+      class: Replace
+      probability: 0.1
+      replace_type: vampire
+    necromancer:
+      target_type: skeleton
+      class: Replace
+      probability: 0.1
+      replace_type: necromancer
+    witch:
+      target_type: witch
+      class: Replace
+      probability: 1.0
+      replace_type: mwitch
+    skeletons:
+      target_type: skeleton
+      class: Replace
+      probability: 0.2
+      replace_type: skeleton_warrior

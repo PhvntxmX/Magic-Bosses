@@ -1,0 +1,23 @@
+fast_zombie:
+  type: zombie
+  health: 15
+  show_name: true
+  name: "&bZombie"
+  default_drops: true
+  entity_attributes:
+    generic_attack_damage: 6
+    generic_movement_speed: 0.35
+
+rotten_zombie:
+  type: zombie
+  name: "&2Zombie"
+  show_name: true
+  health: 30
+  entity_attributes:
+    generic_movement_speed: 0.1
+    generic_knockback_resistance: 0.8
+  triggers:
+    damage_dealt:
+      cast: poison_attack
+    death:
+      cast: rotten_zombie

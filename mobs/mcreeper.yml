@@ -1,0 +1,9 @@
+mcreeper:
+  type: creeper
+  default_drops: true
+  interval: 500
+  triggers:
+    damage:
+      cast: camo_off
+    interval:
+      cast: camo

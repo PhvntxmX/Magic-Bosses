@@ -2,8 +2,12 @@ camo_off:
   actions:
     cast:
       - class: PotionEffect
+      - class: ApplyCooldown
+        spells:
+          - camo
   parameters:
     target: self
+    duration: 2000
     remove_effects:
       - invisibility
 

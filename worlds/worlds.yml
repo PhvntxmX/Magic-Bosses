@@ -1,16 +1,14 @@
 nether:
   world: world_nether
   entity_spawn:
-    necromancer:
+    skeletons1:
       target_type: skeleton
       class: Replace
-      probability: 0.1
-      replace_type: necromancer
-    skeletons:
-      target_type: skeleton
-      class: Replace
-      probability: 0.2
-      replace_type: skeleton_warrior
+      probability: 0.8
+      replace_type:
+        ghost: 50
+        skeleton_warrior: 30
+        necromancer: 10
     king:
       target_type: wither_skeleton
       class: Replace
@@ -20,6 +18,18 @@ nether:
 overworld:
   world: world
   entity_spawn:
+    guards:
+      class: Replace
+      priority: 200
+      probability: 0.5
+      target_type: guardian
+      replace_type: water
+    drowned:
+      class: Replace
+      priority: 200
+      probability: 0.2
+      target_type: drowned
+      replace_type: water
     zombies:
       target_type: zombie
       class: Replace
@@ -37,11 +47,6 @@ overworld:
       class: Replace
       probability: 0.1
       replace_type: vampire
-    necromancer:
-      target_type: skeleton
-      class: Replace
-      probability: 0.1
-      replace_type: necromancer
     witch:
       target_type: witch
       class: Replace
@@ -50,5 +55,111 @@ overworld:
     skeletons:
       target_type: skeleton
       class: Replace
+      probability: 0.6
+      replace_type:
+        skeleton_warrior: 50
+        necromancer: 15
+    golems:
+      target_type: iron_golem
+      probability: 1.0
+      class: Replace
+      priority: 200
+      replace_type:
+        clay: 45
+        stone: 50
+        iron: 35
+        diamond: 10
+    elementals:
+      priority: -100
+      class: Replace
       probability: 0.2
-      replace_type: skeleton_warrior
+      replace_type:
+        water: 50
+        fire: 10
+        wind: 30
+        storm: 5
+    exclude:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: armor_stand
+    exclude1:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: bat
+    exclude2:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: cod
+    exclude3:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: salmon
+    exclude4:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: tropical_fish
+    exclude4_1:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: pufferfish
+    exclude5:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: squid
+    exclude6:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: dolphin
+    exclude7:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: drowned
+    exclude8:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: guardian
+    exclude9:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: elder_guardian
+    exclude10:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: wither
+    exclude11:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: iron_golem
+    exclude12:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: snow_golem
+    exclude13:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: silverfish
+    exclude14:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: endermite
+    exclude15:
+      class: Replace
+      priority: 100
+      replace_type: stop
+      target_type: turtle

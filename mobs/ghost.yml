@@ -1,0 +1,34 @@
+ghost:
+  type: skeleton
+  silent: true
+  potion_effects:
+    invisibility: 0
+    fire_resistance: 0
+    slow_falling: 0
+  default_drops: false
+  name: "&fGhost"
+  show_name: true
+  protection:
+    physical: 10
+  entity_attributes:
+    generic_movement_speed: 0.3
+    generic_knockback_resistance: 1.0
+    generic_armor: 0
+    generic_attack_damage: 5
+  interval: 200
+  triggers:
+    death:
+      effects: ghost_death
+    damage:
+      effects: ghost_damage
+    interval:
+      effects: ghost
+      cast:
+        - ghost
+  drops:
+  - "sp:10": 4
+    "sp:11": 5
+    "sp:12": 6
+    "sp:13": 5
+    "sp:14": 4
+    "sp:15": 3

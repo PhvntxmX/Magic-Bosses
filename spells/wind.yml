@@ -1,0 +1,28 @@
+wind:
+  name: Tornado
+  actions:
+    cast:
+      - class: AreaOfEffect
+        radius: 4
+        y_radius: 2
+        actions:
+          - class: Velocity
+            push: -1
+            living_entity_speed: 0.75
+      - class: AreaOfEffect
+        radius: 2
+        y_radius: 5
+        actions:
+          - class: Velocity
+            push: -1
+            living_entity_speed: 0.75
+          - class: Repeat
+            actions:
+            - class: Velocity
+              direction: 0,1,0
+              living_entity_speed: 0.5
+            - class: Delay
+  parameters:
+    target: self
+    repeat: 3
+    delay: 100

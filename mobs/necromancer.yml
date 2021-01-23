@@ -1,6 +1,6 @@
 necromancer:
   type: wither_skeleton
-  name: &5Necromancer
+  name: "&5Necromancer"
   show_name: true
   offhand: appearance_claw
   health: 30
@@ -8,8 +8,15 @@ necromancer:
     generic_armor: 4
     generic_movement_speed: 0.15
   drop_xp: 35
-  default_drops: true
+  default_drops: false
   interval: 25000
   triggers:
     interval:
       cast: "summon type skeleton_warrior repeat 2 delay 3000"
+  drops:
+  - "sp:10": 4
+    "sp:11": 5
+    "sp:12": 6
+    "sp:13": 5
+    "sp:14": 4
+    "sp:15": 3

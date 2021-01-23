@@ -1,0 +1,46 @@
+stormfly:
+  actions:
+    cast:
+      - class: MountArmorStand
+  parameters:
+    target: self
+    start_speed: 0.15
+    steer_speed: 0.15
+    max_height_above_ground: 6
+    liftoff_duration: 750
+    liftoff_thrust: 1
+    direction_y: 0.5
+    duration: -1
+    armor_stand_marker: false
+    mount_untargetable: true
+
+thunderbolt:
+  name: Thunderbolt
+  actions:
+    cast:
+      - class: AreaOfEffect
+        actions:
+          - class: PotionEffect
+          - class: Lightning
+  effects:
+    cast:
+      - location: origin
+        sound: entity_lightning_bolt_thunder
+      - location: targets
+        particle: fireworks_spark
+        particle_count: 10
+        particle_data: 0.1
+        particle_offset_x: 0.2
+        particle_offset_y: 0.2
+        particle_offset_z: 0.2
+  parameters:
+    target: self
+    target_type: Player
+    radius: 16
+    cooldown: 8000
+    y_radius: 16
+    duration: 1000
+    add_effects:
+      blindness: 0
+      slow: 10
+      confusion: 0

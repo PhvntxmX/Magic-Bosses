@@ -1,0 +1,15 @@
+ghost:
+  name: Ghost Touch
+  icon: stick
+  actions:
+    cast:
+    - class: AreaOfEffect
+      actions:
+      - class: PotionEffect
+  parameters:
+    target: self
+    radius: 2
+    duration: 1000
+    add_effects:
+      slow: 1
+      slow_digging: 1

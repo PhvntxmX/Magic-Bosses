@@ -1,6 +1,5 @@
 king:
-  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
-  inherit: false
+  drops_require_player_killer: true
   name: '&6&lKing of The Dead&r'
   type: wither_skeleton
   health: 800

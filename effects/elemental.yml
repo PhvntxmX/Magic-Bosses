@@ -1,0 +1,130 @@
+water_damage:
+ - location: origin
+   sound: entity_player_splash_high_speed
+   sound_pitch: 1.3
+   sound_volume: 0.3
+water_death:
+ - location: origin
+   sound: entity_player_splash_high_speed
+   sound_pitch: 0.8
+   sound_volume: 0.3
+
+water:
+ - location: origin
+   sound: block_bubble_column_upwards_ambient
+   sound_pitch: 1.5
+   sound_volume: 2.0
+   source_location: body
+   particle: block_crack
+   material: water
+   particle_count: 75
+   particle_offset_x: 0.2
+   particle_offset_y: 1.0
+   particle_offset_z: 0.2
+ - location: origin
+   source_location: feet
+   effectlib:
+     class: AnimatedBall
+     duration: 1500
+     iterations: 5
+     particle: block_crack
+     particles: 75
+     material: water
+     disappear_with_origin_entity: true
+
+wind:
+ - location: origin
+   source_location: feet
+   effectlib:
+     class: AnimatedBall
+     particle: spell
+     duration: 1500
+     iterations: 100
+     x_factor: 1.75
+     y_factor: 1.5
+     z_factor: 1.75
+     disappear_with_origin_entity: true
+ - location: origin
+   source_location: feet
+   effectlib:
+     class: Tornado
+     duration: 1000
+     iterations: 5
+     max_tornado_radius: 1
+     tornado_height: 3
+     circle_height: 0.5
+     tornado_particle: spell
+     show_cloud: true
+     cloud_size: 0.5
+     y_offset: -0.5
+     disappear_with_origin_entity: true
+
+storm:
+ - location: origin
+   source_location: body
+   particle: redstone
+   color: "#292929"
+   particle_size: 5
+   particle_count: 50
+   particle_offset_x: 1.0
+   particle_offset_y: 0.5
+   particle_offset_z: 1.0
+
+fire_damage:
+ - location: origin
+   sound: block_fire_extinguish
+   sound_pitch: 0.8
+   sound_volume: 0.3
+
+fire_death:
+ - location: origin
+   sound: block_fire_extinguish
+   sound_pitch: 1
+   sound_volume: 1
+
+fire:
+ - location: origin
+   source_location: body
+   particle: flame
+   particle_count: 25
+   particle_offset_x: 0.6
+   particle_offset_z: 0.6
+   particle_offset_y: 1.6
+ - location: origin
+   source_location: body
+   particle: flame
+   particle_count: 75
+   particle_offset_x: 0.6
+   particle_offset_z: 0.6
+   particle_offset_y: 1.6
+ - location: origin
+   source_location: feet
+   effectlib:
+     class: AnimatedBall
+     particle: smoke_normal
+     particle_count: 10
+     particles: 50
+     duration: 1500
+
+ghost:
+ - location: origin
+   source_location: body
+   particle: explosion_normal
+   particle_count: 50
+   particle_offset_x: 0.5
+   particle_offset_z: 0.5
+   particle_offset_y: 1.5
+
+ghost_damage:
+ - location: origin
+   source_location: body
+   sound: particle_soul_escape
+   sound_volume: 5
+   sound_pitch: 1.5
+
+ghost_death:
+ - location: origin
+   source_location: body
+   sound: particle_soul_escape
+   sound_volume: 6.5
+   sound_pitch: 0.6

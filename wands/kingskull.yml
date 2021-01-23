@@ -9,9 +9,9 @@ kingskull:
     poison: 0.3
     wither: 0.3
   spell_inventory:
-    deathcurse: 0
+    kingofdead: 0
   mode: cast
-  active_spell: deathcurse
+  active_spell: kingofdead
   weakness:
     fire: 0.1
   effect_particle_interval: 1000.0
@@ -19,6 +19,6 @@ kingskull:
   effect_color: 0.0
   effect_particle_count: 20.0
   keep: true
-  name: "&6King's Skull"
+  name: '&6King's Skull'
   spells:
   - deathcurse

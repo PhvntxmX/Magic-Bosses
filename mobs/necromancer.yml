@@ -1,7 +1,6 @@
 necromancer:
   type: wither_skeleton
   name: "&5Necromancer"
-  show_name: true
   offhand: appearance_claw
   health: 30
   entity_attributes:

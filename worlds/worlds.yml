@@ -4,11 +4,24 @@ nether:
     skeletons1:
       target_type: skeleton
       class: Replace
-      probability: 0.8
+      probability: 0.6
+      not_biomes:
+        - SOUL_SAND_VALLEY
       replace_type:
-        ghost: 50
-        skeleton_warrior: 30
-        necromancer: 10
+        skeleton_warrior: 60
+        necromancer: 5
+        ghost: 15
+    skeletons2:
+      target_type: skeleton
+      class: Replace
+      probability: 0.6
+      biomes:
+        - SOUL_SAND_VALLEY
+      replace_type:
+        skeleton_warrior: 40
+        skeleton_rider: 20
+        necromancer: 5
+        ghost: 60
     king:
       target_type: wither_skeleton
       class: Replace
@@ -18,47 +31,49 @@ nether:
 overworld:
   world: world
   entity_spawn:
-    guards:
+    water:
       class: Replace
       priority: 200
-      probability: 0.5
-      target_type: guardian
-      replace_type: water
-    drowned:
-      class: Replace
-      priority: 200
-      probability: 0.2
-      target_type: drowned
+      probability: 0.4
+      target_types:
+        - guardian
+        - drowned
       replace_type: water
     zombies:
       target_type: zombie
       class: Replace
       probability: 0.5
       replace_type:
-        fast_zombie: 30
-        rotten_zombie: 10
+        fast_zombie: 40
+        rotten_zombie: 15
+    skeletons:
+      target_type: skeleton
+      class: Replace
+      probability: 0.6
+      replace_type:
+        skeleton_warrior: 40
+        skeleton_rider: 20
+        necromancer: 5
+        ghost: 15
     creeper:
       target_type: creeper
       class: Replace
-      probability: 0.2
+      probability: 0.15
       replace_type: mcreeper
+
+
     vampire:
       target_type: villager
       class: Replace
-      probability: 0.1
+      probability: 0.05
       replace_type: vampire
     witch:
       target_type: witch
       class: Replace
       probability: 1.0
       replace_type: mwitch
-    skeletons:
-      target_type: skeleton
-      class: Replace
-      probability: 0.6
-      replace_type:
-        skeleton_warrior: 50
-        necromancer: 15
+
+
     golems:
       target_type: iron_golem
       probability: 1.0
@@ -69,97 +84,39 @@ overworld:
         stone: 50
         iron: 35
         diamond: 10
+
+
     elementals:
       priority: -100
       class: Replace
-      probability: 0.2
+      probability: 0.35
+      target_type: enderman
       replace_type:
         water: 50
         fire: 10
-        wind: 30
+        wind: 20
         storm: 5
+
+
     exclude:
       class: Replace
       priority: 100
       replace_type: stop
-      target_type: armor_stand
-    exclude1:
-      class: Replace
-      priority: 100
-      replace_type: stop
-      target_type: bat
-    exclude2:
-      class: Replace
-      priority: 100
-      replace_type: stop
-      target_type: cod
-    exclude3:
-      class: Replace
-      priority: 100
-      replace_type: stop
-      target_type: salmon
-    exclude4:
-      class: Replace
-      priority: 100
-      replace_type: stop
-      target_type: tropical_fish
-    exclude4_1:
-      class: Replace
-      priority: 100
-      replace_type: stop
-      target_type: pufferfish
-    exclude5:
-      class: Replace
-      priority: 100
-      replace_type: stop
-      target_type: squid
-    exclude6:
-      class: Replace
-      priority: 100
-      replace_type: stop
-      target_type: dolphin
-    exclude7:
-      class: Replace
-      priority: 100
-      replace_type: stop
-      target_type: drowned
-    exclude8:
-      class: Replace
-      priority: 100
-      replace_type: stop
-      target_type: guardian
-    exclude9:
-      class: Replace
-      priority: 100
-      replace_type: stop
-      target_type: elder_guardian
-    exclude10:
-      class: Replace
-      priority: 100
-      replace_type: stop
-      target_type: wither
-    exclude11:
-      class: Replace
-      priority: 100
-      replace_type: stop
-      target_type: iron_golem
-    exclude12:
-      class: Replace
-      priority: 100
-      replace_type: stop
-      target_type: snow_golem
-    exclude13:
-      class: Replace
-      priority: 100
-      replace_type: stop
-      target_type: silverfish
-    exclude14:
-      class: Replace
-      priority: 100
-      replace_type: stop
-      target_type: endermite
-    exclude15:
-      class: Replace
-      priority: 100
-      replace_type: stop
-      target_type: turtle
+      target_types:
+        - armor_stand
+        - bat
+        - cod
+        - salmon
+        - tropical_fish
+        - pufferfish
+        - squid
+        - dolphin
+        - drowned
+        - guardian
+        - elder_guardian
+        - wither
+        - iron_golem
+        - snow_golem
+        - silverfish
+        - endermite
+        - turtle

@@ -1,17 +1,19 @@
 ghost:
-  type: skeleton
+  type: husk
   silent: true
   potion_effects:
     invisibility: 0
     fire_resistance: 0
     slow_falling: 0
   default_drops: false
-  name: "&fGhost"
+  name: '&fGhost'
   show_name: true
+  item: ""
+  offhand: ""
   protection:
     physical: 10
   entity_attributes:
-    generic_movement_speed: 0.3
+    generic_movement_speed: 0.35
     generic_knockback_resistance: 1.0
     generic_armor: 0
     generic_attack_damage: 5
@@ -24,11 +26,11 @@ ghost:
     interval:
       effects: ghost
       cast:
-        - ghost
+      - ghost
   drops:
-  - "sp:10": 4
-    "sp:11": 5
-    "sp:12": 6
-    "sp:13": 5
-    "sp:14": 4
-    "sp:15": 3
+  - sp:10: 4
+    sp:11: 5
+    sp:12: 6
+    sp:13: 5
+    sp:14: 4
+    sp:15: 3

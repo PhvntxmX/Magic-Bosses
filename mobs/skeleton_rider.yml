@@ -1,0 +1,8 @@
+skeleton_rider:
+  name: "&fSkeleton Horseman"
+  type: skeleton
+  health: 30
+  item: iron_sword
+  helmet: iron_helmet
+  default_drops: true
+  mount: skeleton_horse

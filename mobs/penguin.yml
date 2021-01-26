@@ -1,0 +1,70 @@
+penguin:
+  type: drowned
+  name: "Grumm"
+  ai: false
+  silent: true
+  health: 10
+  potion_effects:
+    invisibility: 0
+  helmet: "skull:http://textures.minecraft.net/texture/7e91cb3e25dd4c72c014931797d69c674ce65cb9bfe7481af6952c049dcd4e15"
+  mount: penguin0
+  default_drops: false
+  transformable: false
+  drops:
+    - cod: 9
+      salmon: 2
+  triggers:
+    spawn:
+      commands:
+      - mmob spawn penguin @x @y @z
+    death:
+      commands:
+      - mmob clear penguin0 1 @x @y @z @world
+      - mmob clear penguin00 1 @x @y @z @world
+penguin0:
+  type: zombie
+  baby: true
+  silent: true
+  name: "Penguin"
+  health: 10
+  track_radius: 5
+  entity_attributes:
+    generic_follow_range: 5
+    generic_movement_speed: 0.1
+    generic_knockback_resistance: 1.0
+    generic_attack_damage: 0
+  potion_effects:
+    invisibility: 0
+  helmet: "skull:http://textures.minecraft.net/texture/d3c57facbb3a4db7fd55b5c0dc7d19c19cb0813c748ccc9710c714727551f5b9"
+  chestplate: "leather_chestplate:#000000"
+  leggings: "leather_leggings:#000000"
+  boots: "leather_boots:#FFA500"
+  default_drops: false
+  transformable: false
+  mount: penguin00
+  drops:
+    - cod: 9
+      salmon: 2
+  triggers:
+    death:
+      commands:
+      - mmob clear penguin 1 @x @y @z @world
+      - mmob clear penguin00 1 @x @y @z @world
+penguin00:
+  type: chicken
+  baby: true
+  silent: true
+  name: "Penguin"
+  health: 10
+  track_radius: 5
+  mage:
+    protected: true
+  entity_attributes:
+    generic_follow_range: 5
+    generic_movement_speed: 0.1
+    generic_knockback_resistance: 1.0
+    generic_attack_damage: 0
+  potion_effects:
+    invisibility: 0
+  default_drops: false
+  transformable: false

@@ -1,0 +1,37 @@
+frog:
+  type: zombie
+  name: "Grumm"
+  silent: true
+  mage:
+    protected: true
+  potion_effects:
+    invisibility: 0
+  ai: false
+  gravity: false
+  transformable: false
+  default_drops: false
+  helmet: "skull:http://textures.minecraft.net/texture/99494b8044c18c7466eda5ec25e9d7f4cb9281b0aefbbce117ce78a9f63e26dd"
+  mount: frog0
+  triggers:
+    death:
+      commands:
+      - mmob clear frog0 1 @x @y @z @world
+
+frog0:
+  type: slime
+  size: 2
+  split: false
+  health: 4
+  potion_effects:
+    invisibility: 0
+  silent: true
+  name: "Frog"
+  default_drops: false
+  drops:
+    - slime_ball@1: 10
+      slime_ball@2: 3
+      none: 25
+  triggers:
+    death:
+      commands:
+      - mmob clear frog 1 @x @y @z @world

@@ -14,9 +14,6 @@ penguin:
     - cod: 9
       salmon: 2
   triggers:
-    spawn:
-      commands:
-      - mmob spawn penguin @x @y @z
     death:
       commands:
       - mmob clear penguin0 1 @x @y @z @world
@@ -27,9 +24,9 @@ penguin0:
   silent: true
   name: "Penguin"
   health: 10
-  track_radius: 5
+  track_radius: 8
   entity_attributes:
-    generic_follow_range: 5
+    generic_follow_range: 8
     generic_movement_speed: 0.1
     generic_knockback_resistance: 1.0
     generic_attack_damage: 0
@@ -56,12 +53,12 @@ penguin00:
   silent: true
   name: "Penguin"
   health: 10
-  track_radius: 5
   mage:
     protected: true
+  track_radius: 8
   entity_attributes:
-    generic_follow_range: 5
-    generic_movement_speed: 0.1
+    generic_follow_range: 8
+    generic_movement_speed: 0.25
     generic_knockback_resistance: 1.0
     generic_attack_damage: 0
   potion_effects:

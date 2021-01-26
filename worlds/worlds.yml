@@ -31,6 +31,11 @@ nether:
 overworld:
   world: world
   entity_spawn:
+    penguin:
+      class: Replace
+      probability: 0.7
+      target_type: polar_bear
+      replace_type: penguin
     crab:
       class: Replace
       priority: 100
@@ -42,10 +47,36 @@ overworld:
         crab: 20
         crab1: 1
         
+    flower:
+      class: Replace
+      biomes:
+        - FLOWER_FOREST
+      probability: 1.0
+      target_types:
+        - cow
+        - pig
+        - chicken
+        - sheep
+        - rabbit
+      replace_type:
+        rabbit: 15
+        bird: 30
+        bird1: 30
+        bird2: 30
+        bird3: 55
+        bird4: 40
     forest:
       class: Replace
       not_biomes:
         - PLAINS
+        - FLOWER_FOREST
+        - BAMBOO_JUNGLE
+        - BAMBOO_JUNGLE_HILLS
+        - JUNGLE
+        - JUNGLE_EDGE
+        - JUNGLE_HILLS
+        - MODIFIED_JUNGLE
+        - MODIFIED_JUNGLE_EDGE
       probability: 1.0
       target_types:
         - cow
@@ -59,6 +90,27 @@ overworld:
         hedgehog: 20
         bird3: 180
         bird4: 200
+    jungle:
+      class: Replace
+      biomes:
+        - BAMBOO_JUNGLE
+        - BAMBOO_JUNGLE_HILLS
+        - JUNGLE
+        - JUNGLE_EDGE
+        - JUNGLE_HILLS
+        - MODIFIED_JUNGLE
+        - MODIFIED_JUNGLE_EDGE
+      probability: 1.0
+      target_types:
+        - cow
+        - pig
+        - chicken
+        - sheep
+        - rabbit
+      replace_type:
+        bird: 5
+        bird1: 5
+        bird2: 5
 
 
     frog:

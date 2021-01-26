@@ -6,7 +6,7 @@ __*WIP*__ An example configuration for Magic plugin.
 2. Enter the command `/mconfig example fetch Magic-Bosses https://github.com/PhvntxmX/Magic-Bosses/archive/main.zip`
 ## Description
 Adds several new mobs:
-* Birds, mice, hedgehogs, frogs and crabs.
+* Birds, mice, hedgehogs, frogs, crabs and penguins.
 * Skeletons:
   * Skeleton Warrior - spawns naturally in overworld and nether. Has 20 HP and iron sword as a weapon.
   * Skeleton Horseman - spawns naturally in overworld and nether. Has 30 HP, equiped with iron sword and iron helmet.

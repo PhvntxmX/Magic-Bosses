@@ -31,6 +31,46 @@ nether:
 overworld:
   world: world
   entity_spawn:
+    crab:
+      class: Replace
+      priority: 100
+      probability: 0.4
+      target_types:
+        - tropical_fish
+        - turtle
+      replace_type:
+        crab: 20
+        crab1: 1
+        
+    forest:
+      class: Replace
+      not_biomes:
+        - PLAINS
+      probability: 1.0
+      target_types:
+        - cow
+        - pig
+        - chicken
+        - sheep
+        - rabbit
+      replace_type:
+        rabbit: 25
+        mouse: 35
+        hedgehog: 20
+        bird3: 180
+        bird4: 200
+
+
+    frog:
+      class: Replace
+      biomes:
+        - SWAMP
+        - SWAMP_HILLS
+      probability: 1.0
+      target_type: slime
+      replace_type: frog
+
+
     water:
       class: Replace
       priority: 200

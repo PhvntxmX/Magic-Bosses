@@ -68,6 +68,10 @@ overworld:
     forest:
       class: Replace
       not_biomes:
+        - SAVANNA
+        - SAVANNA_PLATEAU
+        - SHATTERED_SAVANNA
+        - SHATTERED_SAVANNA_PLATEAU
         - ERODED_BADLANDS
         - BADLANDS
         - BADLANDS_PLATEAU

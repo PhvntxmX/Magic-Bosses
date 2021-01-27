@@ -39,7 +39,7 @@ fire:
 
 water:
   drops_require_player_killer: true
-  type: skeleton
+  type: drowned
   silent: true
   potion_effects:
     invisibility: 0

@@ -84,12 +84,16 @@ overworld:
         - chicken
         - sheep
         - rabbit
+        - horse
+        - donkey
       replace_type:
         rabbit: 25
         mouse: 35
+        deer: 50
+        moose: 40
         hedgehog: 20
-        bird3: 180
-        bird4: 200
+        bird3: 130
+        bird4: 150
     jungle:
       class: Replace
       biomes:
@@ -112,7 +116,6 @@ overworld:
         bird1: 5
         bird2: 5
 
-
     frog:
       class: Replace
       biomes:
@@ -122,34 +125,51 @@ overworld:
       target_type: slime
       replace_type: frog
 
-
-    water:
+    spideregg:
+      target_type: spider
       class: Replace
-      priority: 200
-      probability: 0.4
-      target_types:
-        - guardian
-        - drowned
-      replace_type: water
+      y_max: 50
+      probability: 0.3
+      replace_type: spideregg
+
     zombies:
       target_type: zombie
       class: Replace
+      y_min: 60
       probability: 0.5
       replace_type:
         fast_zombie: 40
         rotten_zombie: 15
+    miner:
+      target_type: zombie
+      class: Replace
+      y_max: 59
+      probability: 0.3
+      replace_type: miner
+
+
     skeletons:
       target_type: skeleton
       class: Replace
+      y_min: 60
       probability: 0.6
       replace_type:
         skeleton_warrior: 40
-        skeleton_rider: 20
+        skeleton_rider: 5
         necromancer: 5
-        ghost: 15
+    skeletons_caves:
+      target_type: skeleton
+      class: Replace
+      y_max: 59
+      probability: 0.8
+      replace_type:
+        skeleton_warrior: 50
+        ghost: 10
+
     creeper:
       target_type: creeper
       class: Replace
+      y_min: 60
       probability: 0.15
       replace_type: mcreeper
 
@@ -181,13 +201,22 @@ overworld:
     elementals:
       priority: -100
       class: Replace
-      probability: 0.35
+      probability: 0.4
+      y_min: 60
       target_type: enderman
       replace_type:
-        water: 50
-        fire: 10
-        wind: 20
-        storm: 5
+        water: 80
+        fire: 40
+        wind: 60
+        storm: 1
+    water:
+      class: Replace
+      priority: 200
+      probability: 0.4
+      target_types:
+        - guardian
+        - drowned
+      replace_type: water
 
 
     exclude:

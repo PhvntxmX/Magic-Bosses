@@ -68,6 +68,15 @@ overworld:
     forest:
       class: Replace
       not_biomes:
+        - ERODED_BADLANDS
+        - BADLANDS
+        - BADLANDS_PLATEAU
+        - MODIFIED_BADLANDS_PLATEAU
+        - MODIFIED_WOODED_BADLANDS_PLATEAU
+        - WOODED_BADLANDS_PLATEAU
+        - DESERT
+        - DESERT_HILLS
+        - DESERT_LAKES
         - PLAINS
         - FLOWER_FOREST
         - BAMBOO_JUNGLE
@@ -145,7 +154,7 @@ overworld:
       class: Replace
       y_max: 59
       probability: 0.3
-      replace_type: miner
+      replace_type: zombie_miner
 
 
     skeletons:

@@ -91,6 +91,7 @@ overworld:
         - MODIFIED_JUNGLE
         - MODIFIED_JUNGLE_EDGE
       probability: 1.0
+      priority: 200
       target_types:
         - cow
         - pig
@@ -149,6 +150,7 @@ overworld:
       target_type: zombie
       class: Replace
       y_min: 60
+      priority: 100
       probability: 0.5
       replace_type:
         fast_zombie: 40
@@ -225,10 +227,8 @@ overworld:
     water:
       class: Replace
       priority: 200
-      probability: 0.4
-      target_types:
-        - guardian
-        - drowned
+      probability: 0.5
+      target_type: guardian
       replace_type: water
 
 

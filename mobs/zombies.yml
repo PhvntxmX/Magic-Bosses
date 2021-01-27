@@ -1,7 +1,6 @@
 fast_zombie:
   type: zombie
   health: 15
-  show_name: true
   name: "&bZombie"
   default_drops: true
   entity_attributes:
@@ -11,7 +10,6 @@ fast_zombie:
 rotten_zombie:
   type: zombie
   name: "&2Zombie"
-  show_name: true
   health: 30
   entity_attributes:
     generic_movement_speed: 0.1
@@ -21,3 +19,7 @@ rotten_zombie:
       cast: poison_attack
     death:
       cast: rotten_zombie
+
+zombie:
+  type: zombie
+  name: "Zombie"

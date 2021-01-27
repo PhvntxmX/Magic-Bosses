@@ -1,0 +1,75 @@
+deer0:
+  type: horse
+  horse_color: creamy
+  baby: true
+  silent: true
+  horse_style: white_dots
+  health: 25
+  entity_attributes:
+    generic_movement_speed: 0.3
+  tamed: true
+  transformable: false
+  default_drops: false
+  drops:
+    - leather@1
+    - mutton@1: 18
+      mutton@2: 25
+      mutton@3: 10
+  triggers:
+    death:
+      commands:
+      - mmob clear deer 3 @x @y @z @world
+
+deer:
+  type: zombie
+  baby: true
+  silent: true
+  track_radius: 5
+  entity_attributes:
+    generic_follow_range: 5
+    generic_attack_knockback: 5
+    generic_attack_damage: 1
+  mount: deer0
+  item: dead_fire_coral
+  offhand: dead_fire_coral
+  potion_effects:
+    invisibility: 0
+  mage:
+    protected: true
+
+moose0:
+  type: horse
+  horse_color: brown
+  silent: true
+  horse_style: none
+  health: 25
+  entity_attributes:
+    generic_movement_speed: 0.25
+  tamed: true
+  transformable: false
+  default_drops: false
+  drops:
+    - leather@1
+    - mutton@1: 18
+      mutton@2: 25
+      mutton@3: 10
+  triggers:
+    death:
+      commands:
+      - mmob clear moose 3 @x @y @z @world
+
+moose:
+  type: zombie
+  silent: true
+  track_radius: 5
+  entity_attributes:
+    generic_follow_range: 5
+    generic_attack_knockback: 5
+    generic_attack_damage: 3
+  mount: moose0
+  item: dead_bubble_coral_fan
+  offhand: dead_bubble_coral_fan
+  potion_effects:
+    invisibility: 0
+  mage:
+    protected: true

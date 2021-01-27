@@ -1,0 +1,16 @@
+spideregg:
+  type: husk
+  helmet: "skull:http://textures.minecraft.net/texture/983b30e9d135b05190eea2c3ac61e2ab55a2d81e1a58dbb26983a14082664"
+  ai: false
+  name: "Grumm"
+  silent: true
+  health: 0.1
+  default_drops: false
+  drop_xp: 0
+  potion_effects:
+    invisibility: 0
+  triggers:
+    death:
+      effects: egg
+      commands:
+      - mmob spawn spiderling @x @y @z @world 5

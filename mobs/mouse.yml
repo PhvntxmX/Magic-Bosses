@@ -43,9 +43,9 @@ spiderling:
   transformable: false
   default_drops: false
   drops:
-    - string@1: 18
-      string@2: 8
-      none: 15
+    - string@1: 13
+      string@2: 5
+      none: 20
   entity_attributes:
     generic_attack_damage: 2
     generic_movement_speed: 0.25

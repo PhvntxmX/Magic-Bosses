@@ -3,10 +3,10 @@ __*WIP*__ An example configuration for Magic plugin.
 
 ## How to install
 1. Install the [Magic plugin](https://www.spigotmc.org/resources/magic.1056/)
-2. Enter the command `/mconfig example fetch Magic-Bosses https://github.com/PhvntxmX/Magic-Bosses/archive/main.zip`
+2. Enter the command `/mconfig example fetch bosses`
 ## Description
 Adds several new mobs:
-* Birds, mice, hedgehogs, frogs, crabs and penguins.
+* Birds, mice, hedgehogs, frogs, crabs, penguins and other animals.
 * Skeletons:
   * Skeleton Warrior - spawns naturally in overworld and nether. Has 20 HP and iron sword as a weapon.
   * Skeleton Horseman - spawns naturally in overworld and nether. Has 30 HP, equiped with iron sword and iron helmet.
@@ -17,7 +17,7 @@ Adds several new mobs:
 * Ghost - can be killed only with magic spell. Spawns naturally in soul sand valleys in nether.
 * Fast Zombie - has a chance to spawn instead of regular zombie. Has 15 HP, but moves faster and does more damage.
 * Rotten Zombie - has a chance to spawn instead of regular zombie. Has 30 HP, can apply poison effect when attacking. Explodes on death, poisoning all the creatures around.
-* Creeper - some creepers can now hide in grass. Be careful!.
+* Creeper - some creepers can now hide in grass. Be careful!
 * Elementals - can be killed only with magic spell. Each elemental has its own abilities. Elementals can spawn all around the world randomly.
   * Fire Elemental - can put nearby creatures on fire when attacked.
   * Water Elemental - can launch a powerful stream of water. Has higher chance to spawn in ocean temples.

@@ -1,5 +1,5 @@
 crab:
-  type: zombie
+  type: drowned
   silent: true
   persist: true
   helmet: "skull:http://textures.minecraft.net/texture/f3c88ac9a031edb1e708f9e73cbf758bdc41b5e047c43898107a848f0394ba0e"
@@ -16,7 +16,7 @@ crab:
   show_name: false
 
 crab1:
-  type: zombie
+  type: drowned
   silent: true
   persist: true
   helmet: "skull:http://textures.minecraft.net/texture/73dfa7d21389a6a095caf6ee417ded8cd2939d4d44999a7f92d95d71545a1c94"

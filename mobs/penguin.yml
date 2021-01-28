@@ -3,7 +3,7 @@ penguin:
   name: "Grumm"
   ai: false
   silent: true
-  persist: false
+  persist: true
   health: 10
   potion_effects:
     invisibility: 0
@@ -23,7 +23,7 @@ penguin0:
   type: zombie
   baby: true
   silent: true
-  persist: true
+  persist: false
   name: "Penguin"
   health: 10
   track_radius: 8

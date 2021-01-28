@@ -167,7 +167,7 @@ overworld:
     miner:
       target_type: zombie
       class: Replace
-      y_max: 59
+      max_y: 59
       probability: 0.3
       replace_type: zombie_miner
 

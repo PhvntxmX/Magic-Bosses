@@ -3,7 +3,7 @@ bird1:
   baby: true
   name: "Grumm"
   silent: true
-  persist: false
+  persist: true
   mage:
     protected: true
   potion_effects:
@@ -12,17 +12,15 @@ bird1:
   gravity: false
   helmet: "skull:http://textures.minecraft.net/texture/93a5962eef4762bfe03a5945375f1149c346613fff09d0c51c22407090e7f45e"
   mount: bird0
-  triggers:
-    death:
-      commands:
-      - mmob clear bird0 1 @x @y @z @world
+  remove_mounts:
+  - bird
 
 bird2:
   type: zombie
   baby: true
   name: "Grumm"
   silent: true
-  persist: false
+  persist: true
   mage:
     protected: true
   potion_effects:
@@ -31,17 +29,15 @@ bird2:
   gravity: false
   helmet: "skull:http://textures.minecraft.net/texture/284347d803e3911339a96cc9dd690e738ee2f4f88446162088ecf4ca64e34ab0"
   mount: bird0
-  triggers:
-    death:
-      commands:
-      - mmob clear bird0 1 @x @y @z @world
+  remove_mounts:
+  - bird
 
 bird3:
   type: zombie
   baby: true
   name: "Grumm"
   silent: true
-  persist: false
+  persist: true
   mage:
     protected: true
   potion_effects:
@@ -50,17 +46,15 @@ bird3:
   gravity: false
   helmet: "skull:http://textures.minecraft.net/texture/e922df4eea64a923ed3055b722a76eb79d797f5fbd397851d4c725c16d8d98a"
   mount: bird0
-  triggers:
-    death:
-      commands:
-      - mmob clear bird0 1 @x @y @z @world
+  remove_mounts:
+  - bird
 
 bird4:
   type: zombie
   baby: true
   name: "Grumm"
   silent: true
-  persist: false
+  persist: true
   mage:
     protected: true
   potion_effects:
@@ -69,17 +63,15 @@ bird4:
   gravity: false
   helmet: "skull:http://textures.minecraft.net/texture/8aa4189098ed6b17ce66499fa43d6d5ba79b6572dfa75916f1c75bdd5b815e44"
   mount: bird0
-  triggers:
-    death:
-      commands:
-      - mmob clear bird0 1 @x @y @z @world
+  remove_mounts:
+  - bird
 
 bird:
   type: zombie
   baby: true
   name: "Grumm"
   silent: true
-  persist: false
+  persist: true
   mage:
     protected: true
   potion_effects:
@@ -88,14 +80,12 @@ bird:
   gravity: false
   helmet: "skull:http://textures.minecraft.net/texture/aa8cfc93a217546e5e6b0ff9966554012bd7461b1595bfcc5fbcaebdf2606791"
   mount: bird0
-  triggers:
-    death:
-      commands:
-      - mmob clear bird0 1 @x @y @z @world
+  remove_mounts:
+  - bird
 
 bird0:
   name: "Bird"
-  persist: false
+  persist: true
   potion_effects:
     invisibility: 0
   type: bat
@@ -104,11 +94,9 @@ bird0:
       feather@2: 2
     - chicken: 3
       none: 10
-  triggers:
-    death:
-      commands:
-      - mmob clear bird 1 @x @y @z @world
-      - mmob clear bird1 1 @x @y @z @world
-      - mmob clear bird2 1 @x @y @z @world
-      - mmob clear bird3 1 @x @y @z @world
-      - mmob clear bird4 1 @x @y @z @world
+  remove_mounts:
+  - bird
+  - bird1
+  - bird2
+  - bird3
+  - bird4

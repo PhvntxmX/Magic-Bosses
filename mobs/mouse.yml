@@ -2,6 +2,7 @@ mouse:
   type: zombie
   name: "Grumm"
   baby: false
+  persist: true
   silent: true
   health: 10
   transformable: false
@@ -21,6 +22,7 @@ hedgehog:
   name: "Grumm"
   baby: false
   silent: true
+  persist: true
   health: 10
   transformable: false
   default_drops: false
@@ -39,6 +41,7 @@ spiderling:
   name: "Grumm"
   baby: false
   silent: true
+  persist: false
   health: 8
   transformable: false
   default_drops: false

@@ -7,7 +7,6 @@ deer0:
   health: 25
   entity_attributes:
     generic_movement_speed: 0.3
-  tamed: true
   transformable: false
   default_drops: false
   drops:
@@ -45,7 +44,6 @@ moose0:
   health: 25
   entity_attributes:
     generic_movement_speed: 0.25
-  tamed: true
   transformable: false
   default_drops: false
   drops:

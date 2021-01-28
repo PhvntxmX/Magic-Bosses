@@ -2,6 +2,7 @@ frog:
   type: zombie
   name: "Grumm"
   silent: true
+  persist: false
   mage:
     protected: true
   potion_effects:
@@ -21,6 +22,7 @@ frog0:
   type: slime
   size: 2
   split: false
+  persist: false
   health: 4
   potion_effects:
     invisibility: 0

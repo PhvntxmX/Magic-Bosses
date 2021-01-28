@@ -12,7 +12,7 @@ mouse:
   entity_attributes:
     generic_attack_damage: 1
     generic_movement_speed: 0.5
-    generic_follow_range: 0
+    generic_follow_range: 8
   potion_effects:
     invisibility: 0
   helmet: "skull:http://textures.minecraft.net/texture/5ccac06379e8bc4cff3801fc9350fec6b5fead6385cd3395e61d414c0273eb3f"
@@ -32,7 +32,7 @@ hedgehog:
   entity_attributes:
     generic_attack_damage: 0
     generic_movement_speed: 0.1
-    generic_follow_range: 0
+    generic_follow_range: 8
   potion_effects:
     invisibility: 0
   helmet: "skull:http://textures.minecraft.net/texture/65a25cc8eb4e2a83f536e5d9a51e099a73b672694776d8a793d53c6c7a1e8e0"

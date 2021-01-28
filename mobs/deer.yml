@@ -25,6 +25,7 @@ deer:
   baby: true
   silent: true
   persist: false
+  docile: true
   track_radius: 5
   entity_attributes:
     generic_follow_range: 5

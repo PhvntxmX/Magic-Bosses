@@ -95,7 +95,7 @@ bird:
 
 bird0:
   name: "Bird"
-  persist: false
+  persist: true
   potion_effects:
     invisibility: 0
   type: bat

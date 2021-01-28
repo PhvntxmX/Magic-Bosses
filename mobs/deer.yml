@@ -9,7 +9,7 @@ deer0:
     generic_movement_speed: 0.3
   transformable: false
   default_drops: false
-  persist: true
+  persist: false
   drops:
     - leather@1
     - mutton@1: 18
@@ -24,13 +24,13 @@ deer:
   type: zombie
   baby: true
   silent: true
+  persist: false
   track_radius: 5
   entity_attributes:
     generic_follow_range: 5
     generic_attack_knockback: 5
     generic_attack_damage: 1
   mount: deer0
-  persist: true
   item: dead_fire_coral
   offhand: dead_fire_coral
   potion_effects:
@@ -42,7 +42,7 @@ moose0:
   type: horse
   horse_color: brown
   silent: true
-  persist: true
+  persist: false
   horse_style: none
   health: 25
   entity_attributes:
@@ -62,7 +62,7 @@ moose0:
 moose:
   type: zombie
   silent: true
-  persist: true
+  persist: false
   track_radius: 5
   entity_attributes:
     generic_follow_range: 5

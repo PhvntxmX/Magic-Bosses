@@ -9,22 +9,20 @@ deer0:
     generic_movement_speed: 0.3
   transformable: false
   default_drops: false
-  persist: false
+  persist: true
   drops:
     - leather@1
     - mutton@1: 18
       mutton@2: 25
       mutton@3: 10
-  triggers:
-    death:
-      commands:
-      - mmob clear deer 3 @x @y @z @world
+  remove_mounts:
+  - deer
 
 deer:
   type: zombie
   baby: true
   silent: true
-  persist: false
+  persist: true
   docile: true
   track_radius: 5
   entity_attributes:
@@ -43,7 +41,7 @@ moose0:
   type: horse
   horse_color: brown
   silent: true
-  persist: false
+  persist: true
   horse_style: none
   health: 25
   entity_attributes:
@@ -55,15 +53,13 @@ moose0:
     - mutton@1: 18
       mutton@2: 25
       mutton@3: 10
-  triggers:
-    death:
-      commands:
-      - mmob clear moose 3 @x @y @z @world
+  remove_mounts:
+  - moose
 
 moose:
   type: zombie
   silent: true
-  persist: false
+  persist: true
   track_radius: 5
   entity_attributes:
     generic_follow_range: 5

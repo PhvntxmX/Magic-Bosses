@@ -142,14 +142,14 @@ overworld:
     spideregg:
       target_type: spider
       class: Replace
-      y_max: 50
+      max_y: 50
       probability: 0.3
       replace_type: spideregg
 
     zombies:
       target_type: zombie
       class: Replace
-      y_min: 60
+      min_y: 60
       priority: 100
       probability: 0.5
       replace_type:
@@ -166,7 +166,7 @@ overworld:
     skeletons:
       target_type: skeleton
       class: Replace
-      y_min: 60
+      min_y: 60
       probability: 0.6
       replace_type:
         skeleton_warrior: 40
@@ -175,7 +175,7 @@ overworld:
     skeletons_caves:
       target_type: skeleton
       class: Replace
-      y_max: 59
+      max_y: 59
       probability: 0.8
       replace_type:
         skeleton_warrior: 50
@@ -184,7 +184,7 @@ overworld:
     creeper:
       target_type: creeper
       class: Replace
-      y_min: 60
+      min_y: 60
       probability: 0.15
       replace_type: mcreeper
 
@@ -217,7 +217,7 @@ overworld:
       priority: -100
       class: Replace
       probability: 0.4
-      y_min: 60
+      min_y: 60
       target_type: enderman
       replace_type:
         water: 80
@@ -237,7 +237,6 @@ overworld:
       priority: 100
       replace_type: stop
       target_types:
-        - armor_stand
         - bat
         - cod
         - salmon

@@ -12,9 +12,9 @@ deer0:
   persist: true
   drops:
     - leather@1
-    - mutton@1: 18
-      mutton@2: 25
-      mutton@3: 10
+    - mutton@1: 25
+      mutton@2: 12
+      mutton@3: 8
   remove_mounts:
   - deer
 
@@ -49,10 +49,8 @@ moose0:
   transformable: false
   default_drops: false
   drops:
-    - leather@1
-    - mutton@1: 18
-      mutton@2: 25
-      mutton@3: 10
+    - leather@1: 29
+      leather@2: 1
   remove_mounts:
   - moose
 

@@ -3,7 +3,7 @@ penguin:
   name: "Grumm"
   ai: false
   silent: true
-  persist: false
+  persist: true
   health: 10
   potion_effects:
     invisibility: 0

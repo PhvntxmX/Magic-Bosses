@@ -1,0 +1,32 @@
+shroom0:
+  type: rabbit
+  silent: true
+  baby: true
+  persist: false
+  potion_effects:
+    invisibility: 0
+  health: 10
+  default_drops: false
+  mage:
+    protected: true
+
+shroom:
+  name: Grumm
+  health: 10
+  type: zombie
+  baby: true
+  ai: false
+  silent: true
+  persist: false
+  helmet: "skull:http://textures.minecraft.net/texture/cd5c88f35fabbbdb14e2ae91cd2d9c2f698a7a7362d6d987bb60457f263e85"
+  transformable: false
+  default_drops: false
+  mount: shroom0
+  potion_effects:
+    invisibility: 0
+  triggers:
+    death:
+      commands:
+      - mmob clear shroom0 1 @x @y @z @world
+  drops:
+  - red_mushroom

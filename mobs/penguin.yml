@@ -3,6 +3,7 @@ penguin:
   name: "Grumm"
   ai: false
   silent: true
+  persist: true
   health: 10
   potion_effects:
     invisibility: 0
@@ -13,15 +14,15 @@ penguin:
   drops:
     - cod: 9
       salmon: 2
-  triggers:
-    death:
-      commands:
-      - mmob clear penguin0 1 @x @y @z @world
-      - mmob clear penguin00 1 @x @y @z @world
+  remove_mounts:
+  - penguin0
+  - penguin00
 penguin0:
   type: zombie
   baby: true
   silent: true
+  persist: true
+  docile: true
   name: "Penguin"
   health: 10
   track_radius: 8
@@ -42,11 +43,9 @@ penguin0:
   drops:
     - cod: 9
       salmon: 2
-  triggers:
-    death:
-      commands:
-      - mmob clear penguin 1 @x @y @z @world
-      - mmob clear penguin00 1 @x @y @z @world
+  remove_mounts:
+  - penguin
+  - penguin00
 penguin00:
   type: chicken
   baby: true

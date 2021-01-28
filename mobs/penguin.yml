@@ -23,7 +23,7 @@ penguin0:
   type: zombie
   baby: true
   silent: true
-  persist: false
+  persist: true
   name: "Penguin"
   health: 10
   track_radius: 8

@@ -2,11 +2,13 @@ crab:
   type: drowned
   silent: true
   persist: true
+  docile: true
   helmet: "skull:http://textures.minecraft.net/texture/f3c88ac9a031edb1e708f9e73cbf758bdc41b5e047c43898107a848f0394ba0e"
+  track_radius: 8
   entity_attributes:
     generic_movement_speed: 0.12
     generic_attack_damage: 1
-    generic_follow_range: 5
+    generic_follow_range: 8
   potion_effects:
     invisibility: 0
   default_drops: false
@@ -19,11 +21,13 @@ crab1:
   type: drowned
   silent: true
   persist: true
+  docile: true
   helmet: "skull:http://textures.minecraft.net/texture/73dfa7d21389a6a095caf6ee417ded8cd2939d4d44999a7f92d95d71545a1c94"
+  track_radius: 8
   entity_attributes:
     generic_movement_speed: 0.12
     generic_attack_damage: 1
-    generic_follow_range: 5
+    generic_follow_range: 8
   potion_effects:
     invisibility: 0
   default_drops: false

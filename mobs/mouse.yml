@@ -4,10 +4,10 @@ mouse:
   baby: false
   persist: true
   silent: true
+  docile: true
   health: 10
   transformable: false
   default_drops: false
-  docile:
   track_radius: 0
   entity_attributes:
     generic_attack_damage: 1
@@ -24,6 +24,7 @@ hedgehog:
   baby: false
   silent: true
   persist: true
+  docile: true
   health: 10
   transformable: false
   default_drops: false

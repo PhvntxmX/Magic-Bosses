@@ -12,8 +12,6 @@ bird1:
   gravity: false
   helmet: "skull:http://textures.minecraft.net/texture/93a5962eef4762bfe03a5945375f1149c346613fff09d0c51c22407090e7f45e"
   mount: bird0
-  remove_mounts:
-  - bird
 
 bird2:
   type: zombie
@@ -46,8 +44,6 @@ bird3:
   gravity: false
   helmet: "skull:http://textures.minecraft.net/texture/e922df4eea64a923ed3055b722a76eb79d797f5fbd397851d4c725c16d8d98a"
   mount: bird0
-  remove_mounts:
-  - bird
 
 bird4:
   type: zombie
@@ -63,8 +59,6 @@ bird4:
   gravity: false
   helmet: "skull:http://textures.minecraft.net/texture/8aa4189098ed6b17ce66499fa43d6d5ba79b6572dfa75916f1c75bdd5b815e44"
   mount: bird0
-  remove_mounts:
-  - bird
 
 bird:
   type: zombie
@@ -80,8 +74,6 @@ bird:
   gravity: false
   helmet: "skull:http://textures.minecraft.net/texture/aa8cfc93a217546e5e6b0ff9966554012bd7461b1595bfcc5fbcaebdf2606791"
   mount: bird0
-  remove_mounts:
-  - bird
 
 bird0:
   name: "Bird"

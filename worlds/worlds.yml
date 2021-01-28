@@ -143,7 +143,7 @@ overworld:
       target_type: spider
       class: Replace
       max_y: 50
-      probability: 0.3
+      probability: 0.4
       replace_type: spideregg
 
     zombies:

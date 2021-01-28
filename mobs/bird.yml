@@ -3,7 +3,7 @@ bird1:
   baby: true
   name: "Grumm"
   silent: true
-  persist: true
+  persist: false
   mage:
     protected: true
   potion_effects:
@@ -22,7 +22,7 @@ bird2:
   baby: true
   name: "Grumm"
   silent: true
-  persist: true
+  persist: false
   mage:
     protected: true
   potion_effects:
@@ -41,7 +41,7 @@ bird3:
   baby: true
   name: "Grumm"
   silent: true
-  persist: true
+  persist: false
   mage:
     protected: true
   potion_effects:
@@ -60,7 +60,7 @@ bird4:
   baby: true
   name: "Grumm"
   silent: true
-  persist: true
+  persist: false
   mage:
     protected: true
   potion_effects:
@@ -79,7 +79,7 @@ bird:
   baby: true
   name: "Grumm"
   silent: true
-  persist: true
+  persist: false
   mage:
     protected: true
   potion_effects:
@@ -95,7 +95,7 @@ bird:
 
 bird0:
   name: "Bird"
-  persist: true
+  persist: false
   potion_effects:
     invisibility: 0
   type: bat

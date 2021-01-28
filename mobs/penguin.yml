@@ -3,7 +3,7 @@ penguin:
   name: "Grumm"
   ai: false
   silent: true
-  persist: true
+  persist: false
   health: 10
   potion_effects:
     invisibility: 0
@@ -53,7 +53,7 @@ penguin00:
   type: chicken
   baby: true
   silent: true
-  persist: true
+  persist: false
   name: "Penguin"
   health: 10
   mage:

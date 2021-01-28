@@ -46,7 +46,16 @@ overworld:
       replace_type:
         crab: 20
         crab1: 1
-        
+
+    shroom:
+      class: Replace
+      biomes:
+        - MUSHROOM_FIELD_SHORE
+        - MUSHROOM_FIELDS
+      probability: 0.3
+      target_type: mushroom_cow
+      replace_type: shroom
+
     flower:
       class: Replace
       biomes:

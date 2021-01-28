@@ -237,6 +237,7 @@ overworld:
       priority: 100
       replace_type: stop
       target_types:
+        - armor_stand
         - bat
         - cod
         - salmon

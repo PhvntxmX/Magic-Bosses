@@ -13,10 +13,8 @@ frog:
   default_drops: false
   helmet: "skull:http://textures.minecraft.net/texture/99494b8044c18c7466eda5ec25e9d7f4cb9281b0aefbbce117ce78a9f63e26dd"
   mount: frog0
-  triggers:
-    death:
-      commands:
-      - mmob clear frog0 1 @x @y @z @world
+  remove_mounts:
+  - frog0
 
 frog0:
   type: slime
@@ -33,7 +31,5 @@ frog0:
     - slime_ball@1: 10
       slime_ball@2: 3
       none: 25
-  triggers:
-    death:
-      commands:
-      - mmob clear frog 1 @x @y @z @world
+  remove_mounts:
+  - frog

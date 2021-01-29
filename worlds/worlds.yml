@@ -46,6 +46,13 @@ overworld:
       replace_type:
         crab: 20
         crab1: 1
+    nosquidsinrivers:
+      class: Replace
+      priority: 100
+      probability: 1.0
+      target_type: squid
+      replace_type: cod
+      
 
     shroom:
       class: Replace
@@ -152,8 +159,15 @@ overworld:
       target_type: spider
       class: Replace
       max_y: 50
+      priority: 50
       probability: 0.4
       replace_type: spideregg
+    spiderqueen:
+      target_type: spider
+      class: Replace
+      priority: 100
+      probability: 0.05
+      replace_type: spiderqueen
 
     zombies:
       target_type: zombie
@@ -170,12 +184,24 @@ overworld:
       max_y: 59
       probability: 0.3
       replace_type: zombie_miner
+    mummies:
+      target_type: skeleton
+      class: Replace
+      priority: 200
+      biomes:
+      - DESERT
+      - DESERT_HILLS
+      - DESERT_LAKES
+      probability: 1.0
+      replace_type: mummy
+      
 
 
     skeletons:
       target_type: skeleton
       class: Replace
       min_y: 60
+      priority: 50
       probability: 0.6
       replace_type:
         skeleton_warrior: 40
@@ -185,6 +211,7 @@ overworld:
       target_type: skeleton
       class: Replace
       max_y: 59
+      priority: 100
       probability: 0.8
       replace_type:
         skeleton_warrior: 50

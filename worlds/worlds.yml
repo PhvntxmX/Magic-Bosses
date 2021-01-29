@@ -50,6 +50,8 @@ overworld:
       class: Replace
       priority: 200
       probability: 1.0
+      biomes:
+      - RIVER
       target_type: squid
       replace_type: cod
       

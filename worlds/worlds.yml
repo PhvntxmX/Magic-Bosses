@@ -39,20 +39,19 @@ overworld:
     crab:
       class: Replace
       priority: 200
-      probability: 0.4
+      probability: 0.5
       target_types:
-        - tropical_fish
         - turtle
+        - tropical_fish
+      biomes:
+        - BEACH
+        - WARM_OCEAN
+        - LUKEWARM_OCEAN
+        - DEEP_WARM_OCEAN
+        - DEEP_LUKEWARM_OCEAN
       replace_type:
         crab: 20
         crab1: 1
-    nosquidsinrivers:
-      class: Replace
-      priority: 200
-      probability: 1.0
-      biomes:
-      - RIVER
-      target_type: squid
 
 
     shroom:
@@ -190,9 +189,9 @@ overworld:
       class: Replace
       priority: 200
       biomes:
-      - DESERT
-      - DESERT_HILLS
-      - DESERT_LAKES
+        - DESERT
+        - DESERT_HILLS
+        - DESERT_LAKES
       probability: 1.0
       replace_type: mummy
       
@@ -231,15 +230,15 @@ overworld:
       min_y: 60
       priority: 200
       biomes:
-      - DESERT
-      - DESERT_HILLS
-      - DESERT_LAKES
-      - ERODED_BADLANDS
-      - BADLANDS
-      - BADLANDS_PLATEAU
-      - MODIFIED_BADLANDS_PLATEAU
-      - MODIFIED_WOODED_BADLANDS_PLATEAU
-      - WOODED_BADLANDS_PLATEAU
+        - DESERT
+        - DESERT_HILLS
+        - DESERT_LAKES
+        - ERODED_BADLANDS
+        - BADLANDS
+        - BADLANDS_PLATEAU
+        - MODIFIED_BADLANDS_PLATEAU
+        - MODIFIED_WOODED_BADLANDS_PLATEAU
+        - WOODED_BADLANDS_PLATEAU
       probability: 1.0
       replace_type:
         spider: 95

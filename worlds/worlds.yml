@@ -53,8 +53,7 @@ overworld:
       biomes:
       - RIVER
       target_type: squid
-      replace_type: cod
-      
+
 
     shroom:
       class: Replace

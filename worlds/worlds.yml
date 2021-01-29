@@ -231,6 +231,10 @@ overworld:
       class: Replace
       min_y: 60
       priority: 200
+      biomes:
+      - DESERT
+      - DESERT_HILLS
+      - DESERT_LAKES
       probability: 1.0
       replace_types:
         spider: 95

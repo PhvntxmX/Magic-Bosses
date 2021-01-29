@@ -1,0 +1,8 @@
+mummy:
+  type: husk
+  name: Mummy
+  health: 15
+  helmet: "player_head:http://textures.minecraft.net/texture/19e69518cc1a3344b69773a09a237c66381b8527917f4a3850ee8acf4ef4203b"
+  triggers:
+    death:
+      cast: "summon type skeleton repeat 1 radius 0 target self"

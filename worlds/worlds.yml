@@ -223,8 +223,18 @@ overworld:
       target_type: creeper
       class: Replace
       min_y: 60
+      priority: 100
       probability: 0.15
       replace_type: mcreeper
+    nocreeepersindesert:
+      target_type: creeper
+      class: Replace
+      min_y: 60
+      priority: 200
+      probability: 1.0
+      replace_types:
+        spider: 95
+        spiderqueen: 5
 
 
     vampire:

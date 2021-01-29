@@ -1,27 +1,34 @@
 summon:
+  icon: turtle_egg{CustomModelData:18001}
+  icon_disabled: turtle_egg{CustomModelData:18002}
+  name: "Summon"
+  require_build: true
+  require_break: true
+  pvp_restricted: true
   actions:
     cast:
-      - class: ChangeContext
-        target_caster: true
+    - class: ChangeContext
+      target_caster: true
+      actions:
+      - class: PotionEffect
+    - class: Delay
+    - class: ChangeContext
+      source_is_target: true
+      actions:
+      - class: Repeat
         actions:
-        - class: PotionEffect
-      - class: Delay
-      - class: ChangeContext
-        source_is_target: true
-        actions:
-        - class: Repeat
+        - class: Spread
           actions:
-            - class: Spread
-              actions:
-                - class: SpawnEntity
-                  set_target: true
-                - class: Aggro
-                - class: Delay
-                  delay: 50
-                - class: PlayEffects
-                  effects: spawn
-            - class: Delay
-              delay: 100
+          - class: SpawnEntity
+            set_target: true
+          - class: Aggro
+          - class: Delay
+            delay: 50
+          - class: PlayEffects
+            effects: spawn
+        - class: Delay
+          delay: 100
+    - class: Stop
   effects:
     cast:
     - location: origin
@@ -49,18 +56,20 @@ summon:
         duration: $delay
     spawn:
     - location: target
-      sound: entity_skeleton_hurt
+      sound: entity_item_pickup
+      sound_pitch: 0.5
       particle: explosion_normal
       particle_count: 15
       particle_offset_x: 0.5
       particle_offset_y: 0.5
       particle_offset_z: 0.5
   parameters:
-    add_effects:
-      slow: 10
+    allow_max_range: true
+    effect_slow: 10
     duration: 1000
     target: other
     delay: 1000
+    range: 8
     cancel_on_damage: 10
     repeat: 1
     radius: 8

@@ -38,7 +38,7 @@ overworld:
       replace_type: penguin
     crab:
       class: Replace
-      priority: 100
+      priority: 200
       probability: 0.4
       target_types:
         - tropical_fish
@@ -48,7 +48,7 @@ overworld:
         crab1: 1
     nosquidsinrivers:
       class: Replace
-      priority: 100
+      priority: 200
       probability: 1.0
       target_type: squid
       replace_type: cod

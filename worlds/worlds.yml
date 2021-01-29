@@ -235,6 +235,12 @@ overworld:
       - DESERT
       - DESERT_HILLS
       - DESERT_LAKES
+      - ERODED_BADLANDS
+      - BADLANDS
+      - BADLANDS_PLATEAU
+      - MODIFIED_BADLANDS_PLATEAU
+      - MODIFIED_WOODED_BADLANDS_PLATEAU
+      - WOODED_BADLANDS_PLATEAU
       probability: 1.0
       replace_type:
         spider: 95

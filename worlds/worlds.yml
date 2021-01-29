@@ -75,7 +75,7 @@ overworld:
         - sheep
         - rabbit
       replace_type:
-        rabbit: 15
+        none: 15
         bird: 30
         bird1: 30
         bird2: 30
@@ -117,7 +117,7 @@ overworld:
         - horse
         - donkey
       replace_type:
-        rabbit: 25
+        none: 25
         mouse: 35
         deer: 50
         moose: 40
@@ -182,26 +182,17 @@ overworld:
       target_type: zombie
       class: Replace
       max_y: 59
+      priority: 200
       probability: 0.3
       replace_type: zombie_miner
-    mummies:
-      target_type: skeleton
-      class: Replace
-      priority: 200
-      biomes:
-        - DESERT
-        - DESERT_HILLS
-        - DESERT_LAKES
-      probability: 1.0
-      replace_type: mummy
-      
+
 
 
     skeletons:
       target_type: skeleton
       class: Replace
       min_y: 60
-      priority: 50
+      priority: 100
       probability: 0.6
       replace_type:
         skeleton_warrior: 40
@@ -211,11 +202,21 @@ overworld:
       target_type: skeleton
       class: Replace
       max_y: 59
-      priority: 100
+      priority: 200
       probability: 0.8
       replace_type:
         skeleton_warrior: 50
         ghost: 10
+    mummies:
+      target_type: skeleton
+      class: Replace
+      priority: 300
+      biomes:
+        - DESERT
+        - DESERT_HILLS
+        - DESERT_LAKES
+      probability: 1.0
+      replace_type: mummy
 
     creeper:
       target_type: creeper

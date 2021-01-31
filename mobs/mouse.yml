@@ -2,15 +2,17 @@ mouse:
   type: zombie
   name: "Grumm"
   baby: false
+  persist: true
   silent: true
+  docile: true
   health: 10
   transformable: false
   default_drops: false
-  track_radius: 8
+  track_radius: 0
   entity_attributes:
     generic_attack_damage: 1
     generic_movement_speed: 0.5
-    generic_follow_range: 16
+    generic_follow_range: 8
   potion_effects:
     invisibility: 0
   helmet: "skull:http://textures.minecraft.net/texture/5ccac06379e8bc4cff3801fc9350fec6b5fead6385cd3395e61d414c0273eb3f"
@@ -21,14 +23,16 @@ hedgehog:
   name: "Grumm"
   baby: false
   silent: true
+  persist: true
+  docile: true
   health: 10
   transformable: false
   default_drops: false
-  track_radius: 5
+  track_radius: 0
   entity_attributes:
     generic_attack_damage: 0
     generic_movement_speed: 0.1
-    generic_follow_range: 16
+    generic_follow_range: 8
   potion_effects:
     invisibility: 0
   helmet: "skull:http://textures.minecraft.net/texture/65a25cc8eb4e2a83f536e5d9a51e099a73b672694776d8a793d53c6c7a1e8e0"
@@ -39,13 +43,14 @@ spiderling:
   name: "Grumm"
   baby: false
   silent: true
+  persist: false
   health: 8
   transformable: false
   default_drops: false
   drops:
-    - string@1: 18
-      string@2: 8
-      none: 15
+    - string@1: 13
+      string@2: 5
+      none: 20
   entity_attributes:
     generic_attack_damage: 2
     generic_movement_speed: 0.25

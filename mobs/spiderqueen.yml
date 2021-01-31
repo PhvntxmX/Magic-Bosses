@@ -1,0 +1,21 @@
+spiderqueen:
+  type: spider
+  interval: 5000
+  name: "Spider Queen"
+  health: 40
+  default_drops: true
+  entity_attributes:
+    generic_movement_speed: 0.25
+    generic_attack_damage: 5
+  triggers:
+    interval:
+      cast:
+        spiderweb: 20
+        spideregg: 10
+        none: 5
+  drop_xp: 50
+  drops:
+   - "sp:10": 50
+     "sp:15": 35
+     "sp:20": 10
+     "sp:25": 5

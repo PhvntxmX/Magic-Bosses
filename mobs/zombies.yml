@@ -23,3 +23,20 @@ rotten_zombie:
 zombie:
   type: zombie
   name: "Zombie"
+
+zombie_miner:
+  type: zombie
+  name: "Zombie Miner"
+  item: iron_pickaxe
+  health: 25
+  helmet: "skull:http://textures.minecraft.net/texture/f644c8f36e21d5ea95624928e3f35a2b4949ce75b2fa68ccd2bc84d9ada0cb7"
+  entity_attributes:
+    generic_movement_speed: 0.23
+    generic_attack_damage: 6
+  default_drops: false
+  drops:
+   - iron_pickaxe@65: 5
+     none: 85
+   - rotten_flesh@1: 5
+     rotten_flesh@2: 3
+     rotten_flesh@3: 1

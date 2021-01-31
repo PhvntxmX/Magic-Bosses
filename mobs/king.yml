@@ -3,6 +3,12 @@ king:
   name: '&6&lKing of The Dead&r'
   type: wither_skeleton
   health: 800
+  boss_bar:
+    bar_color: red
+    bar_flags:
+      - create_fog
+      - darken_sky
+      - play_boss_music
   show_name: true
   entity_attributes:
     generic_movement_speed: 0.2
@@ -48,4 +54,4 @@ king:
   drops:
   - kingskull: 10
     none: 50
-  - sp:300
+  - sp:1000

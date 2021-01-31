@@ -6,3 +6,9 @@ skeleton_rider:
   helmet: iron_helmet
   default_drops: true
   mount: skeleton_horse
+
+skeleton_horse:
+  persist: false
+
+zombie_horse:
+  persist: false

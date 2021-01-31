@@ -1,0 +1,10 @@
+egg:
+ - sound: entity_turtle_egg_break
+   sound_volume: 2
+   location: origin
+   particle: block_crack
+   material: cobweb
+   particle_offset_x: 0.3
+   particle_offset_y: 0.2
+   particle_offset_z: 0.3
+   particle_count: 25

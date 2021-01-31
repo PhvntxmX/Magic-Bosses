@@ -5,6 +5,7 @@ nether:
       target_type: skeleton
       class: Replace
       probability: 0.6
+      priority: 100
       not_biomes:
         - SOUL_SAND_VALLEY
       replace_type:
@@ -15,6 +16,7 @@ nether:
       target_type: skeleton
       class: Replace
       probability: 0.6
+      priority: 200
       biomes:
         - SOUL_SAND_VALLEY
       replace_type:
@@ -26,6 +28,7 @@ nether:
       target_type: wither_skeleton
       class: Replace
       probability: 0.005
+      priority: 100
       replace_type: king
 
 overworld:
@@ -60,6 +63,7 @@ overworld:
         - MUSHROOM_FIELD_SHORE
         - MUSHROOM_FIELDS
       probability: 0.3
+      priority: 500
       target_type: mushroom_cow
       replace_type: shroom
 
@@ -68,60 +72,73 @@ overworld:
       biomes:
         - FLOWER_FOREST
       probability: 1.0
+      priority: 500
       target_types:
         - cow
         - pig
         - chicken
         - sheep
-        - rabbit
-      replace_type:
-        none: 15
-        bird: 30
-        bird1: 30
-        bird2: 30
-        bird3: 55
-        bird4: 40
-    forest:
-      class: Replace
-      not_biomes:
-        - SAVANNA
-        - SAVANNA_PLATEAU
-        - SHATTERED_SAVANNA
-        - SHATTERED_SAVANNA_PLATEAU
-        - ERODED_BADLANDS
-        - BADLANDS
-        - BADLANDS_PLATEAU
-        - MODIFIED_BADLANDS_PLATEAU
-        - MODIFIED_WOODED_BADLANDS_PLATEAU
-        - WOODED_BADLANDS_PLATEAU
-        - DESERT
-        - DESERT_HILLS
-        - DESERT_LAKES
-        - PLAINS
-        - FLOWER_FOREST
-        - BAMBOO_JUNGLE
-        - BAMBOO_JUNGLE_HILLS
-        - JUNGLE
-        - JUNGLE_EDGE
-        - JUNGLE_HILLS
-        - MODIFIED_JUNGLE
-        - MODIFIED_JUNGLE_EDGE
-      probability: 1.0
-      priority: 200
-      target_types:
-        - cow
-        - pig
-        - chicken
-        - sheep
-        - rabbit
         - horse
         - donkey
       replace_type:
-        none: 25
-        mouse: 35
-        deer: 50
-        moose: 40
+        bee: 5
+        bird: 50
+        bird1: 50
+        bird2: 50
+        bird3: 75
+        bird4: 80
+    forest:
+      class: Replace
+      biomes:
+        - BIRCH_FOREST
+        - BIRCH_FOREST_HILLS
+        - DARK_FOREST
+        - DARK_FOREST_HILLS
+        - FOREST
+        - TALL_BIRCH_FOREST
+        - TALL_BIRCH_HILLS
+        - WOODED_HILLS
+        - WOODED_MOUNTAINS
+      probability: 1.0
+      priority: 500
+      target_types:
+        - cow
+        - pig
+        - chicken
+        - sheep
+        - horse
+        - donkey
+      replace_type:
+        mouse: 40
+        deer: 80
+        moose: 70
         hedgehog: 20
+        bird3: 100
+        bird4: 120
+    taiga:
+      class: Replace
+      biomes:
+        - SNOWY_BEACH
+        - SNOWY_MOUNTAINS
+        - SNOWY_TAIGA
+        - SNOWY_TAIGA_HILLS
+        - SNOWY_TAIGA_MOUNTAINS
+        - SNOWY_TUNDRA
+        - TAIGA
+        - TAIGA_HILLS
+        - TAIGA_MOUNTAINS
+      probability: 1.0
+      priority: 500
+      target_types:
+        - cow
+        - pig
+        - chicken
+        - sheep
+        - horse
+        - donkey
+      replace_type:
+        deer: 50
+        moose: 80
         bird3: 130
         bird4: 150
     jungle:
@@ -135,12 +152,15 @@ overworld:
         - MODIFIED_JUNGLE
         - MODIFIED_JUNGLE_EDGE
       probability: 1.0
+      priority: 500
       target_types:
         - cow
         - pig
         - chicken
         - sheep
         - rabbit
+        - horse
+        - donkey
       replace_type:
         bird: 5
         bird1: 5
@@ -152,20 +172,21 @@ overworld:
         - SWAMP
         - SWAMP_HILLS
       probability: 1.0
+      priority: 100
       target_type: slime
       replace_type: frog
 
     spideregg:
       target_type: spider
       class: Replace
-      max_y: 50
-      priority: 50
+      max_y: 100
+      priority: 100
       probability: 0.4
       replace_type: spideregg
     spiderqueen:
       target_type: spider
       class: Replace
-      priority: 100
+      priority: 200
       probability: 0.05
       replace_type: spiderqueen
 
@@ -249,11 +270,13 @@ overworld:
     vampire:
       target_type: villager
       class: Replace
+      priority: 100
       probability: 0.05
       replace_type: vampire
     witch:
       target_type: witch
       class: Replace
+      priority: 100
       probability: 1.0
       replace_type: mwitch
 
@@ -271,16 +294,21 @@ overworld:
 
 
     elementals:
-      priority: -100
+      priority: 100
       class: Replace
-      probability: 0.4
+      probability: 0.5
       min_y: 60
       target_type: enderman
       replace_type:
-        water: 80
-        fire: 40
-        wind: 60
+        wind: 129
         storm: 1
+    fire:
+      priority: 100
+      class: Replace
+      probability: 0.5
+      max_y: 60
+      target_type: enderman
+      replace_type: fire
     water:
       class: Replace
       priority: 200
@@ -291,7 +319,7 @@ overworld:
 
     exclude:
       class: Replace
-      priority: 100
+      priority: 0
       replace_type: stop
       target_types:
         - armor_stand

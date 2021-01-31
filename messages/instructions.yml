@@ -1,7 +1,16 @@
 examples:
+  bosses:
+    instructions: |-
+      &8| &3&nMOBS AND BOSSES &r
+      &8|   &fCustom mobs will now spawn naturally all over the world! &r
+      &8|   &fSummon new Bosses to fight them and obtain powerful artifacts! &r
+      &8|   &fIf your default world is not called &6world&f you will &r
+      &8|   &fneed to customize your configuration using &r
+      &8|   &7/mconfig configure world overworld world yourworld &r
+      &8|   &7/mconfig configure world nether world yournether &r
   mobsandbosses:
     instructions: |-
-      &8| &3&nMobs and Bosses &r
+      &8| &3&nMOBS AND BOSSES &r
       &8|   &fCustom mobs will now spawn naturally all over the world! &r
       &8|   &fSummon new Bosses to fight them and obtain powerful artifacts! &r
       &8|   &fIf your default world is not called &6world&f you will &r

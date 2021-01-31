@@ -17,6 +17,7 @@ frog:
   - frog0
 
 frog0:
+  hidden: true
   type: slime
   size: 2
   split: false

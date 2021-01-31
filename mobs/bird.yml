@@ -77,6 +77,7 @@ bird:
 
 bird0:
   name: "Bird"
+  hidden: true
   persist: true
   potion_effects:
     invisibility: 0

@@ -1,4 +1,5 @@
 shroom0:
+  hidden: true
   type: rabbit
   silent: true
   baby: true

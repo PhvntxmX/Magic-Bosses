@@ -1,4 +1,5 @@
 deer0:
+  hidden: true
   type: horse
   horse_color: creamy
   baby: true
@@ -37,6 +38,7 @@ deer:
     invisibility: 0
 
 moose0:
+  hidden: true
   type: horse
   horse_color: brown
   silent: true

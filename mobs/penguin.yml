@@ -17,7 +17,9 @@ penguin:
   remove_mounts:
   - penguin0
   - penguin00
+
 penguin0:
+  hidden: true
   type: zombie
   baby: true
   silent: true
@@ -46,7 +48,9 @@ penguin0:
   remove_mounts:
   - penguin
   - penguin00
+
 penguin00:
+  hidden: true
   type: chicken
   baby: true
   silent: true

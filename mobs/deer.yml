@@ -32,10 +32,9 @@ deer:
   mount: deer0
   item: dead_fire_coral
   offhand: dead_fire_coral
+  protected: true
   potion_effects:
     invisibility: 0
-  mage:
-    protected: true
 
 moose0:
   type: horse
@@ -66,7 +65,6 @@ moose:
   mount: moose0
   item: dead_bubble_coral_fan
   offhand: dead_bubble_coral_fan
+  protected: true
   potion_effects:
     invisibility: 0
-  mage:
-    protected: true

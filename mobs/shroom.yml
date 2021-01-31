@@ -7,8 +7,7 @@ shroom0:
     invisibility: 0
   health: 10
   default_drops: false
-  mage:
-    protected: true
+  protected: true
 
 shroom:
   name: Grumm

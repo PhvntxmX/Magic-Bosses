@@ -3,8 +3,7 @@ frog:
   name: "Grumm"
   silent: true
   persist: false
-  mage:
-    protected: true
+  protected: true
   potion_effects:
     invisibility: 0
   ai: false

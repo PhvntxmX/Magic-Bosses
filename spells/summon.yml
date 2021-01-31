@@ -1,7 +1,7 @@
 summon:
   icon: turtle_egg{CustomModelData:18001}
   icon_disabled: turtle_egg{CustomModelData:18002}
-  name: "Summon"
+  name: Summon
   require_build: true
   require_break: true
   pvp_restricted: true
@@ -65,6 +65,7 @@ summon:
       particle_offset_z: 0.5
   parameters:
     allow_max_range: true
+    allow_replacement: false
     effect_slow: 10
     duration: 1000
     target: other

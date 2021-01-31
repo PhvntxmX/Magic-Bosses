@@ -53,8 +53,7 @@ penguin00:
   persist: true
   name: "Penguin"
   health: 10
-  mage:
-    protected: true
+  protected: true
   track_radius: 8
   entity_attributes:
     generic_follow_range: 8

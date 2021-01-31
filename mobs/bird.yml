@@ -4,8 +4,7 @@ bird1:
   name: "Grumm"
   silent: true
   persist: true
-  mage:
-    protected: true
+  protected: true
   potion_effects:
     invisibility: 0
   ai: false
@@ -19,8 +18,7 @@ bird2:
   name: "Grumm"
   silent: true
   persist: true
-  mage:
-    protected: true
+  protected: true
   potion_effects:
     invisibility: 0
   ai: false
@@ -36,8 +34,7 @@ bird3:
   name: "Grumm"
   silent: true
   persist: true
-  mage:
-    protected: true
+  protected: true
   potion_effects:
     invisibility: 0
   ai: false
@@ -51,8 +48,7 @@ bird4:
   name: "Grumm"
   silent: true
   persist: true
-  mage:
-    protected: true
+  protected: true
   potion_effects:
     invisibility: 0
   ai: false
@@ -66,8 +62,7 @@ bird:
   name: "Grumm"
   silent: true
   persist: true
-  mage:
-    protected: true
+  protected: true
   potion_effects:
     invisibility: 0
   ai: false

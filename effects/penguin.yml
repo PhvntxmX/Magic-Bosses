@@ -1,0 +1,9 @@
+penguin_damage:
+- location: origin
+  sound: entity_parrot_hurt
+  sound_pitch: 0.6
+
+penguin_death:
+- location: origin
+  sound: entity_parrot_death
+  sound_pitch: 0.8

@@ -3,7 +3,7 @@ __*WIP*__ An example configuration for Magic plugin.
 
 ## How to install
 1. Install the [Magic plugin](https://www.spigotmc.org/resources/magic.1056/)
-2. Enter the command `/mconfig example fetch bosses`
+2. Enter the command `/mconfig example fetch extramobs`
 ## Description
 Adds several new mobs:
 * Birds, mice, hedgehogs, frogs, crabs, penguins and other animals.
@@ -12,11 +12,18 @@ Adds several new mobs:
   * Skeleton Horseman - spawns naturally in overworld and nether. Has 30 HP, equiped with iron sword and iron helmet.
   * Necromancer - has a small chance to spawn instead of regular skeleton. Has 30 HP and ability to summon Skeleton Warriors.
   * King of The Dead - has a small chance to spawn in nether fortress. Has 800 HP and 4 special abilities.
+* Spiders:
+  * Spider Queen - has a small chance to spawn instead of regular spider. Has 40 HP and 2 special abilities.
+  * Spider Egg - can be found in caves. Spawns 5 spiderlings when you break it.
+  * Spiderling - baby version of a spider. Has 8 HP, drops strings on death.
+* Zombies:
+  * Mummy - spawns naturally in deserts. Has 15HP, can spawn a ghost on death.
+  * Zombie Miner - spawns naturally in caves. Has 30 HP and does more damage.
+  * Fast Zombie - has a chance to spawn instead of regular zombie. Has 15 HP, but moves faster and does more damage.
+  * Rotten Zombie - has a chance to spawn instead of regular zombie. Has 30 HP, can apply poison effect when attacking. Explodes on death, poisoning all the creatures around.
 * Vampire - has a small chance to spawn in village. Has 100 HP and 3 abilities (2 spells and 1 passive).
 * Witch - vanilla witch is much stronger now. Has 1 spell, what can both harm a target or give witch a potion effect.
 * Ghost - can be killed only with magic spell. Spawns naturally in soul sand valleys in nether.
-* Fast Zombie - has a chance to spawn instead of regular zombie. Has 15 HP, but moves faster and does more damage.
-* Rotten Zombie - has a chance to spawn instead of regular zombie. Has 30 HP, can apply poison effect when attacking. Explodes on death, poisoning all the creatures around.
 * Creeper - some creepers can now hide in grass. Be careful!
 * Elementals - can be killed only with magic spell. Each elemental has its own abilities. Elementals can spawn all around the world randomly.
   * Fire Elemental - can put nearby creatures on fire when attacked.

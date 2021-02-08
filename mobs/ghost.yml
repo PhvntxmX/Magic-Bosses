@@ -11,7 +11,7 @@ ghost:
   item: ""
   offhand: ""
   protection:
-    physical: 10
+    physical: 1.0
   entity_attributes:
     generic_movement_speed: 0.35
     generic_knockback_resistance: 1.0

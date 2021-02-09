@@ -8,10 +8,12 @@ ghost:
   default_drops: false
   name: '&fGhost'
   show_name: true
+  transformable: false
   item: ""
   offhand: ""
   protection:
     physical: 1.0
+    projectile: 10.0
   entity_attributes:
     generic_movement_speed: 0.35
     generic_knockback_resistance: 1.0

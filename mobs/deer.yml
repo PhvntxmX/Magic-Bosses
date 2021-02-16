@@ -25,6 +25,7 @@ deer:
   silent: true
   persist: true
   docile: true
+  transformable: false
   track_radius: 5
   entity_attributes:
     generic_follow_range: 5
@@ -60,6 +61,7 @@ moose:
   type: zombie
   silent: true
   persist: true
+  transformable: false
   track_radius: 5
   entity_attributes:
     generic_follow_range: 5

@@ -17,6 +17,7 @@ penguin:
     invisibility: 0
   helmet: "skull:http://textures.minecraft.net/texture/7e91cb3e25dd4c72c014931797d69c674ce65cb9bfe7481af6952c049dcd4e15"
   mount: penguin0
+  prevent_dismount: true
   default_drops: false
   transformable: false
   triggers:
@@ -57,6 +58,7 @@ penguin0:
   default_drops: false
   transformable: false
   mount: penguin00
+  prevent_dismount: true
   drops:
     - cod: 9
       salmon: 2

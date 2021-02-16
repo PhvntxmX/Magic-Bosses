@@ -9,6 +9,8 @@ shroom0:
   health: 10
   default_drops: false
   protected: true
+  remove_mounts:
+  - shroom
 
 shroom:
   name: Grumm
@@ -24,9 +26,8 @@ shroom:
   mount: shroom0
   potion_effects:
     invisibility: 0
-  triggers:
-    death:
-      commands:
-      - mmob clear shroom0 1 @x @y @z @world
+  prevent_dismount: true
+  remove_mounts:
+  - shroom0
   drops:
   - red_mushroom

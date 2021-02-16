@@ -12,6 +12,7 @@ frog:
   default_drops: false
   helmet: "skull:http://textures.minecraft.net/texture/99494b8044c18c7466eda5ec25e9d7f4cb9281b0aefbbce117ce78a9f63e26dd"
   mount: frog0
+  prevent_dismount: true
   remove_mounts:
   - frog0
 

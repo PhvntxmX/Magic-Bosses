@@ -31,6 +31,7 @@ deer:
     generic_attack_knockback: 5
     generic_attack_damage: 1
   mount: deer0
+  prevent_dismount: true
   item: dead_fire_coral
   offhand: dead_fire_coral
   protected: true
@@ -65,6 +66,7 @@ moose:
     generic_attack_knockback: 5
     generic_attack_damage: 3
   mount: moose0
+  prevent_dismount: true
   item: dead_bubble_coral_fan
   offhand: dead_bubble_coral_fan
   protected: true

@@ -1,4 +1,5 @@
 ghost:
+  inherit: false
   type: husk
   silent: true
   potion_effects:

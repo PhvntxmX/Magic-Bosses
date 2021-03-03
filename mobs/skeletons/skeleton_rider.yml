@@ -15,8 +15,8 @@ skeleton_rider0:
   persist: false
   default_drops: false
   saddle: true
-  remove_mounts:
-  - skeleton_rider
+  entity_attributes:
+    generic_movement_speed: 0.3
   drops:
   - bone@2: 40
     none: 60

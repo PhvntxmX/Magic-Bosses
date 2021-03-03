@@ -15,6 +15,7 @@ skeleton_rider0:
   persist: false
   default_drops: false
   saddle: true
+  tamed: true
   entity_attributes:
     generic_movement_speed: 0.3
   drops:

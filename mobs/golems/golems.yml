@@ -1,0 +1,56 @@
+base_golem:
+  type: iron_golem
+  show_name: true
+  default_drops: false
+  cancel_interact: true
+
+iron:
+  inherit: base_golem
+  health: 100
+  name: "&fIron Golem"
+  entity_attributes:
+    generic_armor: 14
+    generic_knockback_resistance: 1.0
+    generic_attack_damage: 18
+  default_drops: true
+
+stone:
+  inherit: base_golem
+  health: 70
+  name: "&8Stone Golem"
+  entity_attributes:
+    generic_armor: 14
+    generic_knockback_resistance: 1.0
+    generic_attack_damage: 15
+  drops:
+  - cobblestone@2: 35
+    cobblestone@4: 45
+    cobblestone@8: 20
+
+clay:
+  inherit: base_golem
+  health: 50
+  name: "&7Clay Golem"
+  entity_attributes:
+    generic_knockback_resistance: 1.0
+    generic_attack_damage: 12
+  drops:
+  - clay_ball@4: 35
+    clay_ball@8: 45
+    clay_ball@16: 20
+
+diamond:
+  inherit: base_golem
+  drops_require_player_killer: true
+  name: "&bDiamond Golem"
+  health: 200
+  entity_attributes:
+    generic_armor: 20
+    generic_knockback_resistance: 1.0
+    generic_armor_toughness: 2
+    generic_attack_damage: 30
+  drops:
+  - diamond@1: 75
+    diamond@3: 20
+    diamond@5: 5
+

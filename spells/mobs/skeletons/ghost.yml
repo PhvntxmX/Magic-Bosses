@@ -3,13 +3,13 @@ ghost:
   icon: stick
   actions:
     cast:
-    - class: AreaOfEffect
+    - class: Probability
       actions:
       - class: PotionEffect
   parameters:
-    target: self
-    radius: 2
+    probability: 0.4
+    target: damage_target
     duration: 1000
     add_effects:
-      slow: 1
-      slow_digging: 1
+      slow: 2
+      slow_digging: 2

@@ -11,14 +11,16 @@ firepulse:
         sound: magic.burn
         sound_pitch: 1.2
         effectlib:
-          class: Sphere
-          radius: 1
-          radius_increase: 0.075
-          duration: 750
-          particle: flame
-          particle_offset_x: 0.5
-          particle_offset_y: 0.5
-          particle_offset_z: 0.5
+          class: Modified
+          duration: 500
+          parameters:
+            radius: 5*(t/i)
+          effect:
+            class: Sphere
+            particle: flame
+            particle_offset_x: 0.5
+            particle_offset_y: 0.5
+            particle_offset_z: 0.5
   parameters:
     target: self
     target_type: Damageable

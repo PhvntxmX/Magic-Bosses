@@ -28,7 +28,6 @@ summon:
             effects: spawn
         - class: Delay
           delay: 100
-    - class: Stop
   effects:
     cast:
     - location: origin

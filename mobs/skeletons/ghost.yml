@@ -19,14 +19,15 @@ ghost:
     generic_knockback_resistance: 1.0
     generic_armor: 0
     generic_attack_damage: 5
-  interval: 200
+  interval: 250
   triggers:
+    interval:
+      effects: ghost
     death:
       effects: ghost_death
     damage:
       effects: ghost_damage
-    interval:
-      effects: ghost
+    damage_dealt:
       cast:
       - ghost
   drops:

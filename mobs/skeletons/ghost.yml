@@ -1,4 +1,5 @@
 ghost:
+  inherit: false
   type: husk
   silent: true
   potion_effects:
@@ -31,9 +32,7 @@ ghost:
       cast:
       - ghost
   drops:
-  - sp:10: 4
-    sp:11: 5
-    sp:12: 6
-    sp:13: 5
-    sp:14: 4
-    sp:15: 3
+  - sp:30: 20
+    sp:20: 55
+    sp:10: 25
+

@@ -20,7 +20,6 @@ vampire:
     - location: origin
       source_location: eyes
       particle: heart
-      particle_count: floor($amount)
       particle_offset_x: 0.3
       particle_offset_y: 0.6
       particle_offset_z: 0.3
@@ -46,7 +45,6 @@ vampire_magic:
     - location: origin
       source_location: eyes
       particle: heart
-      particle_count: floor($amount)
       particle_offset_x: 0.3
       particle_offset_y: 0.6
       particle_offset_z: 0.3

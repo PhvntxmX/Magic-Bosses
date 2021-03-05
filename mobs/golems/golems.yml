@@ -3,6 +3,9 @@ base_golem:
   show_name: true
   default_drops: false
   cancel_interact: true
+  interact_spell: golem_buff
+  interact_spell_source: player
+  interact_spell_target: mob
 
 iron:
   inherit: base_golem
@@ -13,11 +16,17 @@ iron:
     generic_knockback_resistance: 1.0
     generic_attack_damage: 18
   default_drops: true
+  interact_spell_parameters:
+    costs:
+      iron_ingot: 1
 
 stone:
   inherit: base_golem
   health: 70
   name: "&8Stone Golem"
+  interact_spell_parameters:
+    costs:
+      cobblestone: 2
   entity_attributes:
     generic_armor: 14
     generic_knockback_resistance: 1.0
@@ -31,6 +40,9 @@ clay:
   inherit: base_golem
   health: 50
   name: "&7Clay Golem"
+  interact_spell_parameters:
+    costs:
+      clay_ball: 4
   entity_attributes:
     generic_knockback_resistance: 1.0
     generic_attack_damage: 12
@@ -44,6 +56,9 @@ diamond:
   drops_require_player_killer: true
   name: "&bDiamond Golem"
   health: 200
+  interact_spell_parameters:
+    costs:
+      diamond: 1
   entity_attributes:
     generic_armor: 20
     generic_knockback_resistance: 1.0

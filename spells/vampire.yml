@@ -51,3 +51,4 @@ vampire_magic:
   parameters:
     target: self
     amount: damage_dealt*0.1
+

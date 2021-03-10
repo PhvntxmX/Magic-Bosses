@@ -8,7 +8,6 @@ ghost:
     slow_falling: 0
   default_drops: false
   name: '&fGhost'
-  show_name: true
   transformable: false
   item: ""
   offhand: ""

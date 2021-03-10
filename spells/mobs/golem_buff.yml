@@ -1,0 +1,32 @@
+golem_buff:
+  name: Repair Golem
+  icon: stone_pickaxe{18001}
+  icon_disabled: stone_pickaxe{18002}
+  cast_on_no_target: false
+  actions:
+    cast:
+    - class: CheckHealth
+      full_health: true
+      invert: true
+      actions:
+        - class: TakeCosts
+          actions:
+            - class: Heal
+  effects:
+    no_target: []
+    cast:
+      - location: origin
+        sound: entity_iron_golem_repair
+        sound_pitch: 0.8
+        sound_volume: 1.5
+        effectlib:
+          class: Cone
+          radius_grow: 0.02
+          length_grow: 0.01
+          duration: 1000
+          particle: block_crack
+          material: iron_block
+  parameters:
+    percentage: 0.25
+    target: other_entity
+    target_type: LivingEntity

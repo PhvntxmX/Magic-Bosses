@@ -1,0 +1,24 @@
+skeleton_rider:
+  name: "&fSkeleton Horseman"
+  type: skeleton
+  health: 30
+  item: iron_sword
+  helmet: iron_helmet
+  default_drops: true
+  mount: skeleton_rider0
+  remove_mounts:
+  - skeleton_rider0
+
+skeleton_rider0:
+  type: skeleton_horse
+  health: 30
+  persist: false
+  default_drops: false
+  saddle: true
+  tamed: true
+  entity_attributes:
+    generic_movement_speed: 0.3
+  drops:
+  - bone@2: 40
+    none: 60
+

@@ -8,7 +8,6 @@ ghost:
     slow_falling: 0
   default_drops: false
   name: '&fGhost'
-  show_name: true
   transformable: false
   item: ""
   offhand: ""
@@ -20,20 +19,19 @@ ghost:
     generic_knockback_resistance: 1.0
     generic_armor: 0
     generic_attack_damage: 5
-  interval: 200
+  interval: 250
   triggers:
+    interval:
+      effects: ghost
     death:
       effects: ghost_death
     damage:
       effects: ghost_damage
-    interval:
-      effects: ghost
+    damage_dealt:
       cast:
       - ghost
   drops:
-  - sp:10: 4
-    sp:11: 5
-    sp:12: 6
-    sp:13: 5
-    sp:14: 4
-    sp:15: 3
+  - sp:30: 20
+    sp:20: 55
+    sp:10: 25
+

@@ -1,0 +1,127 @@
+base_elemental:
+  drops_require_player_killer: true
+  type: skeleton
+  health: 30
+  silent: true
+  show_name: true
+  potion_effects:
+    invisibility: 0
+    fire_resistance: 0
+    slow_falling: 0
+  default_drops: false
+  protection:
+    overall: 0.2
+    physical: 0.8
+  interval: 1000
+  interval_requires_target: false
+  drops:
+  - "sp:30": 10
+    "sp:20": 25
+    "sp:10": 45
+
+fire:
+  inherit: base_elemental
+  name: "&cFire Elemental"
+  helmet: "skull:http://textures.minecraft.net/texture/ade095332720215ca9b85e7eacd1d092b1697fad34d696add94d3b70976702c"
+  entity_attributes:
+    generic_movement_speed: 0.3
+    generic_knockback_resistance: 1.0
+    generic_armor: 0
+    generic_attack_damage: 4
+  triggers:
+    death:
+      effects: fire_death
+    damage:
+      effects: fire_damage
+      cast:
+        none: 5
+        firepulse: 2
+    interval:
+      effects: fire
+
+water:
+  inherit: base_elemental
+  type: drowned
+  name: "&bWater Elemental"
+  helmet: "skull:http://textures.minecraft.net/texture/cdaee0b47e75f9a6dd25cb884c08bff8022286e413a8381b5412d3d1fc174e1"
+  entity_attributes:
+    generic_movement_speed: 0.3
+    generic_knockback_resistance: 1.0
+    generic_armor: 0
+    generic_attack_damage: 2
+  triggers:
+    death:
+      effects: water_death
+    damage:
+      effects: water_damage
+    interval:
+      effects: water
+      cast:
+        none: 4
+        "stream|2 player_damage 2 entity_damage 2": 5
+
+wind:
+  inherit: base_elemental
+  name: "&7Wind Elemental"
+  helmet: "skull:http://textures.minecraft.net/texture/ad93117b9e180e0dc39e5e8a0508482cf1f60e446e022978fe0651a562a597f"
+  protection:
+    overall: 0.2
+    physical: 0.8
+  entity_attributes:
+    generic_movement_speed: 0.3
+    generic_knockback_resistance: 1.0
+    generic_armor: 0
+    generic_attack_damage: 4
+  triggers:
+    death:
+      effects: wind_death
+    damage:
+      effects: wind_damage
+    interval:
+      effects: wind
+      cast:
+        - wind
+
+storm:
+  inherit: base_elemental
+  name: "&8Storm Elemental"
+  helmet: "skull:http://textures.minecraft.net/texture/b42f9c3f7acb7ee562fa55cbe54e1dcc638314d25c398554ecd3720d7ee2b"
+  health: 80
+  protection:
+    overall: 0.2
+    physical: 0.8
+    lightning: 10
+  interval: 250
+  entity_attributes:
+    generic_movement_speed: 0.3
+    generic_knockback_resistance: 1.0
+    generic_armor: 0
+    generic_attack_damage: 4
+  prevent_dismount: true
+  mount: storm0
+  remove_mounts:
+  - storm0
+  triggers:
+    death:
+      commands: "weather clear"
+    spawn:
+      commands: "weather thunder"
+    interval:
+      effects: storm
+      cast:
+        - thunderbolt
+  drops:
+  - "sp:50": 10
+    "sp:40": 15
+    "sp:30": 35
+    "sp:20": 45
+    "sp:10": 15
+
+storm0:
+  inherit: base_elemental
+  type: bat
+  persist: false
+  hidden: true
+  protected: true
+  remove_mounts:
+  - storm

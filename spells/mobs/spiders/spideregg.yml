@@ -1,0 +1,30 @@
+spideregg:
+  name: Spawn Egg
+  actions:
+    cast:
+      - class: PotionEffect
+      - class: Delay
+      - class: ChangeContext
+        target_offset: 0,-1,0
+        actions:
+        - class: SpawnEntity
+  effects:
+    cast:
+      - location: origin
+        sound: entity_spider_step
+    cast_finish:
+      - location: target
+        particle: fireworks_spark
+        particle_count: 10
+        particle_data: 0.15
+        sound: entity_item_pickup
+        sound_pitch: 0.4
+  parameters:
+    target: self
+    delay: 2000
+    duration: 2000
+    type: spideregg
+    add_effects:
+      slow: 8
+      jump: -3
+

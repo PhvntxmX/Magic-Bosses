@@ -1,0 +1,15 @@
+vampire_mob:
+  actions:
+    cast:
+    - class: Heal
+  effects:
+    cast:
+    - location: origin
+      source_location: eyes
+      particle: heart
+      particle_offset_x: 0.3
+      particle_offset_y: 0.6
+      particle_offset_z: 0.3
+  parameters:
+    target: self
+    amount: damage_dealt*0.6

@@ -36,13 +36,18 @@ deathcurse:
     hit:
     - location: target
       effectlib:
-        class: Sphere
-        particle: redstone
-        color: "000000"
-        radius: $radius
-        duration: $duration
-        update_locations: false
-        update_directions: false
+        class: Modified
+        duration: 1000
+        parameters:
+          radius: (t/i)*32
+        effect:
+          class: Sphere
+          particle: redstone
+          particle_size: 2
+          color: "000000"
+          duration: $duration
+          update_locations: false
+          update_directions: false
     - location: target
       sound: entity_elder_guardian_curse
       sound_pitch: 0.7

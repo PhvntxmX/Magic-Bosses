@@ -105,7 +105,7 @@ storm:
     death:
       commands: "weather clear"
     spawn:
-      commands: "nweather thunder"
+      commands: "weather thunder"
     interval:
       effects: storm
       cast:

@@ -13,9 +13,9 @@ deer0:
   persist: true
   drops:
     - leather@1
-    - mutton@1: 25
-      mutton@2: 12
-      mutton@3: 8
+    - venison@1: 25
+      venison@2: 12
+      venison@3: 8
   remove_mounts:
   - deer
 

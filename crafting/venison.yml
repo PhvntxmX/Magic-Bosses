@@ -1,0 +1,21 @@
+venison:
+  type: furnace
+  auto_discover: true
+  output: cooked_venison
+  ingredient: venison
+  cooking_time: 25 seconds
+  experience: 5
+
+venison_campfire:
+  type: campfire
+  output: cooked_venison
+  ingredient: venison
+  cooking_time: 40 seconds
+
+venison_smoker:
+  type: smoker
+  auto_discover: true
+  output: cooked_venison
+  ingredient: venison
+  cooking_time: 15 seconds
+  experience: 5

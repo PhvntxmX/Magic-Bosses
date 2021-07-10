@@ -1,0 +1,7 @@
+venison:
+  item: mutton
+  name: "&rRaw venison"
+
+cooked_venison:
+  item: cooked_mutton
+  name: "&rCooked venison"

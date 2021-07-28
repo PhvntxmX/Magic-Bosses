@@ -13,7 +13,7 @@ venison_campfire:
   cooking_time: 40 seconds
 
 venison_smoker:
-  type: smoker
+  type: smoking
   auto_discover: true
   output: cooked_venison
   ingredient: venison

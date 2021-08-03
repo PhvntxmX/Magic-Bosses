@@ -9,6 +9,9 @@ mouse:
   transformable: false
   default_drops: false
   track_radius: 0
+  targeting:
+    radius: 64
+    required_permissions: magic.team.none
   entity_attributes:
     generic_attack_damage: 1
     generic_movement_speed: 0.5
@@ -29,6 +32,9 @@ hedgehog:
   transformable: false
   default_drops: false
   track_radius: 0
+  targeting:
+    radius: 64
+    required_permissions: magic.team.none
   entity_attributes:
     generic_attack_damage: 0
     generic_movement_speed: 0.1

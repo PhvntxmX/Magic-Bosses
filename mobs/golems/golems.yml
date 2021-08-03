@@ -6,6 +6,12 @@ base_golem:
   interact_spell: golem_buff
   interact_spell_source: player
   interact_spell_target: mob
+  interval: 6000
+  triggers:
+    interval:
+      cast:
+        throwblock: 6
+        none: 10
 
 iron:
   inherit: base_golem

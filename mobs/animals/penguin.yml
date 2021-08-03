@@ -8,9 +8,6 @@ penguin:
   baby: false
   docile: true
   track_radius: 8
-  targeting:
-    radius: 64
-    required_permissions: magic.team.none
   entity_attributes:
     generic_follow_range: 8
     generic_movement_speed: 0.1
@@ -46,9 +43,6 @@ penguin0:
   protected: true
   docile: true
   track_radius: 8
-  targeting:
-    radius: 64
-    required_permissions: magic.team.none
   entity_attributes:
     generic_follow_range: 8
     generic_movement_speed: 0.1

@@ -1,0 +1,94 @@
+throwblock:
+  inherit: false
+  name: Throw Block
+  icon: blue_dye{18001}
+  icon_disabled: blue_dye{18002}
+  cast_on_no_target: false
+  actions:
+    cast:
+      - class: ChangeContext
+        target_caster: true
+        actions:
+          - class: PotionEffect
+            duration: 1000
+            add_effects:
+              slow: 10
+              jump: -5
+      - class: ChangeContext
+        swap_source_and_target: true
+        relative_target_offset: 2,0,0
+        target_offset: 0,-1,0
+        actions:
+          - class: Cover
+            actions:
+              - class: Repeat
+                repeat: 5
+                actions:
+                  - class: MoveBlock
+                    offset: 0,1,0
+                    set_target: true
+                  - class: Delay
+                    delay: 50
+                  - class: Skip
+                    skip: 4
+                    actions:
+                      - class: Brush
+                        sample: true
+                        actions:
+                          - class: ChangeContext
+                            swap_source_and_target: true
+                            source_offset: 0,1,0
+                            actions:
+                              - class: Asynchronous
+                                actions:
+                                  - class: ThrowBlock
+                                    actions:
+                                      - class: PlayEffects
+                                        effects: land
+                                        ignore_result: true
+                                      - class: AreaOfEffect
+                                        actions:
+                                          - class: Damage
+                                          - class: PotionEffect
+                                            duration: 3000
+                                            add_effects:
+                                              slow: 10
+                                              jump: -5
+                                              confusion: 1
+                      - class: Delay
+                        delay: 100
+                      - class: ModifyBlock
+  effects:
+    projectile:
+      - location: origin
+        sound: entity_witch_throw
+        sound_pitch: 0.4
+        sound_volume: 1.2
+    cast:
+      - location: origin
+        sound: entity_ender_dragon_flap
+        sound_pitch: 2
+    land:
+      - sound: block_stone_step
+        sound_pitch: 0.7
+      - class: EffectRing
+        particle: block_crack
+        period: 4
+        particle_count: 20
+        radius: 1
+        particle_offset_x: 0.9
+        particle_offset_z: 0.9
+        particle_offset_y: 0.1
+  parameters:
+    brush: air
+    target: other
+    target_self: false
+    allow_max_range: true
+    range: 32
+    damage: 10
+    radius: 2
+    check_destructible: false
+    undo: 5000
+    cooldown: 2000
+    delay: 250
+    speed: 1.75

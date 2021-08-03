@@ -8,6 +8,9 @@ penguin:
   baby: false
   docile: true
   track_radius: 8
+  targeting:
+    radius: 64
+    required_permissions: magic.team.none
   entity_attributes:
     generic_follow_range: 8
     generic_movement_speed: 0.1
@@ -30,7 +33,6 @@ penguin:
       salmon: 2
   remove_mounts:
   - penguin0
-  - penguin00
 
 penguin0:
   hidden: true
@@ -44,6 +46,9 @@ penguin0:
   protected: true
   docile: true
   track_radius: 8
+  targeting:
+    radius: 64
+    required_permissions: magic.team.none
   entity_attributes:
     generic_follow_range: 8
     generic_movement_speed: 0.1
@@ -57,28 +62,9 @@ penguin0:
   boots: "leather_boots:#FFA500"
   default_drops: false
   transformable: false
-  mount: penguin00
   prevent_dismount: true
   drops:
     - cod: 9
       salmon: 2
   remove_mounts:
   - penguin
-  - penguin00
-
-penguin00:
-  hidden: true
-  type: ocelot
-  baby: true
-  silent: true
-  persist: true
-  name: "Penguin"
-  health: 10
-  protected: true
-  entity_attributes:
-    generic_movement_speed: 0.1
-    generic_knockback_resistance: 1.0
-  potion_effects:
-    invisibility: 0
-  default_drops: false
-  transformable: false

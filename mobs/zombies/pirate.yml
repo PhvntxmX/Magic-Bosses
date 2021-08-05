@@ -7,13 +7,13 @@ pirate:
   transformable: false
   default_drops: false
   drops:
-  - diamond: 5
-    emerald: 5
+  - diamond: 3
+    emerald: 3
     gold_ingot: 10
     gold_nugget@3: 30
     gold_nugget@5: 80
     gold_nugget@7: 60
     gold_nugget@9: 55
     gold_nugget@11: 40
-  - spyglass: 10
+  - spyglass: 1
     none: 100

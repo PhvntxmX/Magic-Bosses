@@ -1,0 +1,64 @@
+pharaoh_damage:
+  actions:
+    cast:
+    - class: AreaOfEffect
+      actions:
+        - class: Repeat
+          actions:
+            - class: PlayEffects
+              effects: wind
+            - class: Damage
+            - class: Velocity
+              push: 1
+            - class: Delay
+        - class: Stop
+    - class: PlayEffects
+      effects: dust
+    - class: Delay
+    - class: ChangeContext
+      target_offset:
+        x: rand(-16,16)
+        y: 0
+        z: rand(-16,16)
+      actions:
+        - class: BlockSearch
+          direction: up
+          actions:
+            - class: Teleport
+              safe: false
+            - class: PlayEffects
+              effects: dust
+  effects:
+    dust:
+      - location: target
+        material: sand
+        particle: falling_dust
+        particle_count: 50
+        particle_offset_x: 1.0
+        particle_offset_y: 1.0
+        particle_offset_z: 1.0
+    wind:
+      - location: target
+        orient: true
+        effectlib:
+          class: Modified
+          duration: 150
+          parameters:
+          radius: "(t/i) * 4 + 0.2"
+          effect:
+            class: Dna
+            material: sand
+            particles_base: 0
+            particles_helix: 7
+            particle_helix: spell
+            particle_base1: spell
+            particle_base2: spell
+  parameters:
+    transparent: transparent_no_water
+    delay: 150
+    living_entity_speed: 1.75
+    y_offset: 0.75
+    target_type: LivingEntity
+    target: self
+    radius: 6
+    damage: 4

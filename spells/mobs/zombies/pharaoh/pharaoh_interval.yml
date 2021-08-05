@@ -1,0 +1,60 @@
+pharaoh_interval:
+  actions:
+    cast:
+    - class: CustomProjectile
+      tick:
+        - class: Skip
+          actions:
+            - class: Cover
+              actions:
+                - class: Brush
+                  sample: true
+                  ignore_result: true
+                  actions:
+                    - class: Repeat
+                      repeat: 2
+                      actions:
+                        - class: BlockSearch
+                          direction: up
+                          ignore_result: true
+                          actions:
+                            - class: ModifyBlock
+                              ignore_result: true
+                            - class: PlayEffects
+                              effects: sand
+                              ignore_result: true
+                            - class: Delay
+                              delay: 50
+                    - class: Undo
+                      ignore_result: true
+                - class: AreaOfEffect
+                  actions:
+                    - class: Damage
+                    - class: Velocity
+                      push: 1
+  effects:
+    sand:
+      - location: target
+        particle: block_dust
+        particle_count: 50
+        particle_offset_x: 0.5
+        particle_offset_y: 0.5
+        particle_offset_z: 0.5
+    tick:
+      - location: target
+        particle: redstone
+        particle_count: 25
+  parameters:
+    skip: 2
+    target: other
+    undo: 50
+    radius: 2
+    y_radius: 2
+    undo_to: 2
+    track_target: true
+    ignore_blocks: true
+    ignore_targeting: true
+    check_destructible: false
+    velocity: 12
+    lifetime: 6000
+    damage: 8

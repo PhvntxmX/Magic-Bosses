@@ -1,0 +1,16 @@
+piratespawner:
+  name: Pirate Spawner
+  interval: 5000
+  spawn:
+    player_range: 32
+    min_players: 1
+    limit_range: 16
+    vertical_range: 16
+    limit: 9
+    count: 3
+    interval: 15000
+    probability: 1
+    radius: 8
+    vertical_radius: 8
+    mobs:
+      pirate: 100

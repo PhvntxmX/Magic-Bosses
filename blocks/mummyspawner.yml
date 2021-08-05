@@ -1,0 +1,33 @@
+mummyspawner:
+  name: Mummy Spawner
+  interval: 5000
+  spawn:
+    player_range: 16
+    min_players: 1
+    limit_range: 16
+    vertical_range: 16
+    limit: 3
+    count: 1
+    interval: 15000
+    probability: 1
+    radius: 5
+    vertical_radius: 1
+    mobs:
+      mummy: 100
+
+pharaohspawner:
+  name: Pharaoh Spawner
+  interval: 5000
+  spawn:
+    player_range: 16
+    min_players: 1
+    limit_range: 16
+    vertical_range: 16
+    limit: 1
+    count: 1
+    interval: 600000
+    probability: 1
+    radius: 5
+    vertical_radius: 1
+    mobs:
+      pharaoh: 100

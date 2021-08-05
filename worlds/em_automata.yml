@@ -1,0 +1,31 @@
+em_automata:
+  world: world
+  chunk_generate:
+    shipwreck:
+      class: MagicBlock
+      biomes:
+      - BEACH
+      - SNOWY_BEACH
+      - OCEAN
+      - COLD_OCEAN
+      - DEEP_COLD_OCEAN
+      - DEEP_LUKEWARM_OCEAN
+      - DEEP_OCEAN
+      - DEEP_WARM_OCEAN
+      - LUKEWARM_OCEAN
+      - WARM_OCEAN
+      - FROZEN_OCEAN
+      - DEEP_FROZEN_OCEAN
+      replace: trap_doors
+      max_y: 75
+      cooldown: 500
+      template:
+        piratespawner: 100
+    deserttemple:
+      class: MagicBlock
+      replace: blue_terracotta
+      min_y: 64
+      max_y: 64
+      template:
+        mummyspawner: 49
+        pharaohspawner: 1

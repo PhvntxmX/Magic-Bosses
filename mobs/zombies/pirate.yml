@@ -1,0 +1,19 @@
+pirate:
+  name: Dead Pirate
+  helmet: "player_head:http://textures.minecraft.net/texture/bbe94fd31b82222432f27b60d765a5d622fd76c4e3a8807f9a1d41fb707afae0"
+  type: drowned
+  health: 25
+  item: iron_sword
+  transformable: false
+  default_drops: false
+  drops:
+  - diamond: 5
+    emerald: 5
+    gold_ingot: 10
+    gold_nugget@3: 30
+    gold_nugget@5: 80
+    gold_nugget@7: 60
+    gold_nugget@9: 55
+    gold_nugget@11: 40
+  - spyglass: 10
+    none: 100

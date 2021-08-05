@@ -1,0 +1,32 @@
+pharaoh:
+  name: "&d&lPharaoh"
+  type: husk
+  health: 500
+  entity_attributes:
+    generic_movement_speed: 0
+  item: engineer
+  boss_bar:
+    bar_color: red
+    bar_flags:
+      - create_fog
+      - darken_sky
+      - play_boss_music
+  helmet: "player_head:http://textures.minecraft.net/texture/673b37659ddadb71e1134bddade04692c15108faa01f817f393b26b95c38c9bc"
+  transformable: false
+  default_drops: false
+  interval: 2000
+  triggers:
+    interval:
+      cast:
+        pharaoh_interval: 2
+        none: 1
+    damage:
+      cast:
+        pharaoh_damage: 2
+        none: 1
+  drops:
+  - diamond@1: 35
+    diamond@2: 15
+    diamond@5: 5
+    none: 45
+  - sp:400

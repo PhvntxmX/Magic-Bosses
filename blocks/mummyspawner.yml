@@ -21,8 +21,8 @@ pharaohspawner:
   spawn:
     player_range: 16
     min_players: 1
-    limit_range: 16
-    vertical_range: 16
+    limit_range: 32
+    vertical_range: 32
     limit: 1
     count: 1
     interval: 600000

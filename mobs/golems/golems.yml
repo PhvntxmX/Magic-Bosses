@@ -8,6 +8,10 @@ base_golem:
   interact_spell_target: mob
   interval: 6000
   triggers:
+    damage_dealt:
+      cast: mob_combat_ai
+    damage:
+      cast: mob_combat_ai
     interval:
       cast:
         throwblock: 6

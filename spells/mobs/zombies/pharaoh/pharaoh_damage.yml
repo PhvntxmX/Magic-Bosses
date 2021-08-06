@@ -1,4 +1,5 @@
 pharaoh_damage:
+  name: Push
   actions:
     cast:
     - class: AreaOfEffect

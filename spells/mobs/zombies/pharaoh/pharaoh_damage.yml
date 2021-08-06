@@ -44,7 +44,7 @@ pharaoh_damage:
           class: Modified
           duration: 150
           parameters:
-          radius: "(t/i) * 4 + 0.2"
+            radius: "(t/i) * 4 + 0.2"
           effect:
             class: Dna
             material: sand

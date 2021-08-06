@@ -1,4 +1,5 @@
 pharaoh_interval:
+  name: Sand Spikes
   actions:
     cast:
     - class: CustomProjectile

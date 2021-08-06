@@ -47,7 +47,6 @@ pharaoh_interval:
     radius: 2
     y_radius: 2
     undo_to: 2
-    track_target: true
     ignore_blocks: true
     ignore_targeting: true
     check_destructible: false

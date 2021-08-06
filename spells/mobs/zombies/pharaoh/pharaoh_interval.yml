@@ -40,10 +40,6 @@ pharaoh_interval:
         particle_offset_x: 0.5
         particle_offset_y: 0.5
         particle_offset_z: 0.5
-    tick:
-      - location: target
-        particle: redstone
-        particle_count: 25
   parameters:
     skip: 2
     target: other

@@ -1,4 +1,4 @@
-nether:
+em_nether:
   world: world_nether
   entity_spawn:
     skeletons1:
@@ -31,7 +31,7 @@ nether:
       priority: 100
       replace_type: king
 
-overworld:
+em_overworld:
   world: world
   entity_spawn:
     penguin:

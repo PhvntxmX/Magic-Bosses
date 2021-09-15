@@ -10,10 +10,11 @@ examples:
       &8|   &7/mconfig configure world nether world yournether &r
   extramobs:
     instructions: |-
-      &8| &3&nEXTRA MOBS&r
-      &8|   &fCustom mobs will now spawn naturally all over the world! &r
-      &8|   &fSummon new &cBosses&f to fight them and obtain powerful &eartifacts&f! &r
-      &8|   &fIf your default world is not called &6world&f you will &r
-      &8|   &fneed to customize your configuration using &r
-      &8|   &7/mconfig configure world overworld world yourworld &r
-      &8|   &7/mconfig configure world nether world yournether &r
+      `<title text="Extra Mobs and Bosses">`
+      `<p>`Custom mobs will now spawn naturally all over the world!
+      `<p>`Summon new &cBosses&f to fight them and obtain powerful &eartifacts&f!
+      `<p>`If your default world is not called &6world&f you will
+      `<p>`need to customize your configuration using &r
+      `<p>`&7/mconfig configure world overworld world yourworld
+      `<p>`&7/mconfig configure world nether world yournether
+      `<p>`Or you can `<command command="meditor world overworld" text="Use the editor">`

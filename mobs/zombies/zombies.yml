@@ -20,10 +20,6 @@ rotten_zombie:
     death:
       cast: rotten_zombie
 
-zombie:
-  type: zombie
-  name: "Zombie"
-
 zombie_miner:
   type: zombie
   name: "Zombie Miner"
